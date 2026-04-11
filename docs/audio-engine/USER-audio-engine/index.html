@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-audio-engine/USER-audio-engine" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Professional Audio Engine | Llamafin</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://llamafin.app/img/llamafin-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://llamafin.app/img/llamafin-social-card.jpg"><meta data-rh="true" property="og:url" content="https://llamafin.app/docs/audio-engine/USER-audio-engine"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Professional Audio Engine | Llamafin"><meta data-rh="true" name="description" content="Audience: End users and technical evaluators"><meta data-rh="true" property="og:description" content="Audience: End users and technical evaluators"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://llamafin.app/docs/audio-engine/USER-audio-engine"><link data-rh="true" rel="alternate" href="https://llamafin.app/docs/audio-engine/USER-audio-engine" hreflang="en"><link data-rh="true" rel="alternate" href="https://llamafin.app/docs/audio-engine/USER-audio-engine" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Professional Audio Engine","item":"https://llamafin.app/docs/audio-engine/USER-audio-engine"}]}</script><link rel="stylesheet" href="/assets/css/styles.dfcef6b7.css">
+<script src="/assets/js/runtime~main.97087c45.js" defer="defer"></script>
+<script src="/assets/js/main.5ba81d92.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>document.documentElement.setAttribute("data-theme","dark"),document.documentElement.setAttribute("data-theme-choice","dark"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/icons/android-chrome-192x192.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/icons/android-chrome-192x192.png" alt="Llamafin Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/icons/android-chrome-192x192.png" alt="Llamafin Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Llamafin</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/getting-started/">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><a class="navbar__item navbar__link navbar-download-btn" href="/download">Get the App</a></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/getting-started/"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/getting-started/"><span title="Getting Started with Llamafin" class="linkLabel_WmDU">Getting Started with Llamafin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/architecture/USER-architecture"><span title="Llamafin Architecture &amp; Technology" class="linkLabel_WmDU">Llamafin Architecture &amp; Technology</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/authentication/USER-authentication"><span title="Authentication &amp; User Security" class="linkLabel_WmDU">Authentication &amp; User Security</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/audio-engine/USER-audio-engine"><span title="Audio &amp; Playback" class="categoryLinkLabel_W154">Audio &amp; Playback</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/audio-engine/USER-audio-engine"><span title="Professional Audio Engine" class="linkLabel_WmDU">Professional Audio Engine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/player/USER-player"><span title="Playback Queue &amp; Player Management" class="linkLabel_WmDU">Playback Queue &amp; Player Management</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/media-session/USER-media-session"><span title="Media Session API" class="linkLabel_WmDU">Media Session API</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/library/USER-library"><span title="Music Library &amp; Discovery" class="categoryLinkLabel_W154">Music Library &amp; Discovery</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/downloads/USER-downloads"><span title="Offline &amp; Downloads" class="categoryLinkLabel_W154">Offline &amp; Downloads</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/connect-p2p/USER-connect-p2p"><span title="Connectivity &amp; Remote Control" class="categoryLinkLabel_W154">Connectivity &amp; Remote Control</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/settings/USER-settings"><span title="Settings &amp; Customisation" class="categoryLinkLabel_W154">Settings &amp; Customisation</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/ui-components/USER-ui-components"><span title="UI &amp; Experience" class="categoryLinkLabel_W154">UI &amp; Experience</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/internationalization/USER-internationalization"><span title="Advanced Features" class="categoryLinkLabel_W154">Advanced Features</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/security/USER-security"><span title="Security &amp; Technical" class="categoryLinkLabel_W154">Security &amp; Technical</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/platform-support/USER-platform-support"><span title="Platform &amp; Deployment" class="categoryLinkLabel_W154">Platform &amp; Deployment</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Audio &amp; Playback</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Professional Audio Engine</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Professional Audio Engine</h1></header>
+<blockquote>
+<p><strong>Audience</strong>: End users and technical evaluators
+<strong>Last Updated</strong>: 2026-04-04
+<strong>Version</strong>: 2.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>Llamafin&#x27;s audio engine is a professional-grade playback system built on the Web Audio API. It delivers studio-quality audio processing with features typically found only in dedicated desktop audio players, all within a cross-platform application.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-processing-pipeline">Audio Processing Pipeline<a href="#audio-processing-pipeline" class="hash-link" aria-label="Direct link to Audio Processing Pipeline" title="Direct link to Audio Processing Pipeline" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="signal-chain-architecture">Signal Chain Architecture<a href="#signal-chain-architecture" class="hash-link" aria-label="Direct link to Signal Chain Architecture" title="Direct link to Signal Chain Architecture" translate="no">​</a></h3>
+<p>Every audio track passes through a sophisticated processing chain:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Audio Source → Preamp → 10-Band EQ → Stereo Width → Balance → Volume → Limiter → Analyser → Output</span><br></span></code></pre></div></div>
+<p><strong>What This Means</strong>: Each stage applies specific audio transformations to deliver the best possible sound quality while giving you complete control over the audio characteristics.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="10-band-graphic-equalizer">10-Band Graphic Equalizer<a href="#10-band-graphic-equalizer" class="hash-link" aria-label="Direct link to 10-Band Graphic Equalizer" title="Direct link to 10-Band Graphic Equalizer" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="precision-frequency-control">Precision Frequency Control<a href="#precision-frequency-control" class="hash-link" aria-label="Direct link to Precision Frequency Control" title="Direct link to Precision Frequency Control" translate="no">​</a></h3>
+<p>Llamafin features a professional 10-band equalizer covering the full audible spectrum:</p>
+<table><thead><tr><th>Band</th><th>Frequency</th><th>Audio Range</th><th>What It Controls</th></tr></thead><tbody><tr><td>1</td><td>60 Hz</td><td>Sub-bass</td><td>Deep bass you feel more than hear</td></tr><tr><td>2</td><td>170 Hz</td><td>Bass</td><td>Bass guitar, kick drum fundamental tones</td></tr><tr><td>3</td><td>310 Hz</td><td>Low-mid</td><td>Warmth and fullness of instruments</td></tr><tr><td>4</td><td>600 Hz</td><td>Mid-range</td><td>Vocal presence and clarity</td></tr><tr><td>5</td><td>1000 Hz</td><td>Mid-range</td><td>Instrument definition and texture</td></tr><tr><td>6</td><td>3000 Hz</td><td>Upper-mid</td><td>Vocal intelligibility and attack</td></tr><tr><td>7</td><td>6000 Hz</td><td>Presence</td><td>Brightness and articulation</td></tr><tr><td>8</td><td>12000 Hz</td><td>Brilliance</td><td>Air and sparkle</td></tr><tr><td>9</td><td>14000 Hz</td><td>Brilliance</td><td>Cymbal shimmer and detail</td></tr><tr><td>10</td><td>16000 Hz</td><td>Ultra-high</td><td>Fine detail and spatial cues</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="16-built-in-presets">16 Built-in Presets<a href="#16-built-in-presets" class="hash-link" aria-label="Direct link to 16 Built-in Presets" title="Direct link to 16 Built-in Presets" translate="no">​</a></h3>
+<p>Quick-access presets for different music genres and listening environments:</p>
+<table><thead><tr><th>Preset</th><th>Best For</th><th>Characteristics</th></tr></thead><tbody><tr><td><strong>Default</strong></td><td>Neutral listening</td><td>Flat response, no colouration</td></tr><tr><td><strong>Classical</strong></td><td>Orchestral, acoustic</td><td>Enhanced hall ambience</td></tr><tr><td><strong>Club</strong></td><td>Dance, electronic</td><td>Strong bass and crisp highs</td></tr><tr><td><strong>Dance</strong></td><td>Upbeat, rhythmic</td><td>Punchy bass, clear mids</td></tr><tr><td><strong>Full Bass</strong></td><td>Bass-heavy genres</td><td>Elevated low frequencies</td></tr><tr><td><strong>Full Bass &amp; Treble</strong></td><td>V-shaped response</td><td>Exciting, dynamic sound</td></tr><tr><td><strong>Full Treble</strong></td><td>Detail-focused listening</td><td>Enhanced clarity and air</td></tr><tr><td><strong>Laptop</strong></td><td>Built-in speakers</td><td>Optimised for small speakers</td></tr><tr><td><strong>Live</strong></td><td>Concert recordings</td><td>Simulates live environment</td></tr><tr><td><strong>Party</strong></td><td>Background music</td><td>Full-range, crowd-pleasing</td></tr><tr><td><strong>Pop</strong></td><td>Popular music</td><td>Vocal-forward, punchy</td></tr><tr><td><strong>Reggae</strong></td><td>Reggae, ska</td><td>Relaxed bass, smooth highs</td></tr><tr><td><strong>Rock</strong></td><td>Rock, metal</td><td>Aggressive mids, tight bass</td></tr><tr><td><strong>Ska</strong></td><td>Ska, punk</td><td>Bright, energetic</td></tr><tr><td><strong>Soft</strong></td><td>Jazz, acoustic</td><td>Smooth, warm response</td></tr><tr><td><strong>Soft Rock</strong></td><td>Mellow rock</td><td>Balanced, easy listening</td></tr><tr><td><strong>Techno</strong></td><td>Electronic, synth</td><td>Deep bass, crisp highs</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-equalizer">Custom Equalizer<a href="#custom-equalizer" class="hash-link" aria-label="Direct link to Custom Equalizer" title="Direct link to Custom Equalizer" translate="no">​</a></h3>
+<p>Create and save your own sound signature:</p>
+<ul>
+<li class="">Each band adjustable from -12 dB to +12 dB</li>
+<li class="">Fine control over frequency response</li>
+<li class="">Save custom profiles for different headphones or speakers</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bass--treble-controls">Bass &amp; Treble Controls<a href="#bass--treble-controls" class="hash-link" aria-label="Direct link to Bass &amp; Treble Controls" title="Direct link to Bass &amp; Treble Controls" translate="no">​</a></h3>
+<p>Simplified tone controls for quick adjustments:</p>
+<p><strong>Bass Control</strong>:</p>
+<ul>
+<li class="">Adjusts the three lowest frequency bands (60Hz, 170Hz, 310Hz)</li>
+<li class="">Applies graduated slope: deepest bass gets full adjustment, higher bass bands get partial</li>
+<li class="">Range: -12 dB to +12 dB</li>
+</ul>
+<p><strong>Treble Control</strong>:</p>
+<ul>
+<li class="">Adjusts the four highest frequency bands (6000Hz, 12000Hz, 14000Hz, 16000Hz)</li>
+<li class="">Graduated application: highest frequencies get full adjustment</li>
+<li class="">Range: -12 dB to +12 dB</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stereo-imaging">Stereo Imaging<a href="#stereo-imaging" class="hash-link" aria-label="Direct link to Stereo Imaging" title="Direct link to Stereo Imaging" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stereo-panning-balance">Stereo Panning (Balance)<a href="#stereo-panning-balance" class="hash-link" aria-label="Direct link to Stereo Panning (Balance)" title="Direct link to Stereo Panning (Balance)" translate="no">​</a></h3>
+<p>Control the left-right balance of audio:</p>
+<ul>
+<li class=""><strong>Range</strong>: -1 (full left) to +1 (full right), 0 is centre</li>
+<li class=""><strong>Use Cases</strong>:<!-- -->
+<ul>
+<li class="">Compensate for off-centre listening position</li>
+<li class="">Adjust for hearing impairment in one ear</li>
+<li class="">Correct imbalanced speaker systems</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stereo-width-haas-effect">Stereo Width (Haas Effect)<a href="#stereo-width-haas-effect" class="hash-link" aria-label="Direct link to Stereo Width (Haas Effect)" title="Direct link to Stereo Width (Haas Effect)" translate="no">​</a></h3>
+<p>Advanced spatial audio processing using the Haas effect:</p>
+<p><strong>How It Works</strong>:</p>
+<ul>
+<li class="">One channel is delayed by up to 15 milliseconds relative to the other</li>
+<li class="">Creates perception of wider or narrower soundstage</li>
+<li class="">Does not affect frequency response</li>
+</ul>
+<p><strong>Width Settings</strong>:</p>
+<table><thead><tr><th>Setting</th><th>Value</th><th>Effect</th></tr></thead><tbody><tr><td><strong>Narrow</strong></td><td>0</td><td>Mono-compatible, centered sound</td></tr><tr><td><strong>Normal</strong></td><td>1</td><td>Original stereo image</td></tr><tr><td><strong>Wide</strong></td><td>1.5</td><td>Expanded soundstage</td></tr><tr><td><strong>Ultra Wide</strong></td><td>2</td><td>Maximum spatial expansion</td></tr></tbody></table>
+<p><strong>Best Uses</strong>:</p>
+<ul>
+<li class=""><strong>Headphones</strong>: Wider settings create more immersive experience</li>
+<li class=""><strong>Speakers</strong>: Normal setting for proper stereo imaging</li>
+<li class=""><strong>Mono systems</strong>: Narrow setting ensures compatibility</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="loudness-normalisation">Loudness normalisation<a href="#loudness-normalisation" class="hash-link" aria-label="Direct link to Loudness normalisation" title="Direct link to Loudness normalisation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="replaygain-support">ReplayGain Support<a href="#replaygain-support" class="hash-link" aria-label="Direct link to ReplayGain Support" title="Direct link to ReplayGain Support" translate="no">​</a></h3>
+<p>Automatic volume leveling across your entire library:</p>
+<p><strong>The Problem</strong>:</p>
+<ul>
+<li class="">Different albums have different mastering levels</li>
+<li class="">You constantly adjust volume between tracks</li>
+<li class="">Modern &quot;loudness war&quot; recordings are much louder than older recordings</li>
+</ul>
+<p><strong>The Solution</strong>:</p>
+<ul>
+<li class="">Llamafin analyses integrated loudness of each track</li>
+<li class="">Automatically adjusts playback volume to match a standard level</li>
+<li class="">Standard target: -14 LUFS (Loudness Units Full Scale)</li>
+</ul>
+<p><strong>How It Works</strong>:</p>
+<ol>
+<li class="">Track&#x27;s loudness measured from sonic analysis data</li>
+<li class="">normalisation gain calculated to reach -14 LUFS target</li>
+<li class="">User preamp gain added (if configured)</li>
+<li class="">Total gain applied to playback chain</li>
+</ol>
+<p><strong>Example</strong>:</p>
+<ul>
+<li class="">Track A mastered at -8 LUFS (loud): Reduced by 6 dB</li>
+<li class="">Track B mastered at -18 LUFS (quiet): Increased by 4 dB</li>
+<li class="">Result: Both tracks play at same perceived loudness</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="user-preamp">User Preamp<a href="#user-preamp" class="hash-link" aria-label="Direct link to User Preamp" title="Direct link to User Preamp" translate="no">​</a></h3>
+<p>Fine-tune the overall output level:</p>
+<ul>
+<li class="">Adjusts gain before it reaches the equalizer</li>
+<li class="">Range: -12 dB to +12 dB</li>
+<li class="">Combined with loudness normalisation for perfect levels</li>
+<li class="">Prevents clipping when using EQ boost</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-limiter">Audio Limiter<a href="#audio-limiter" class="hash-link" aria-label="Direct link to Audio Limiter" title="Direct link to Audio Limiter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="distortion-prevention">Distortion Prevention<a href="#distortion-prevention" class="hash-link" aria-label="Direct link to Distortion Prevention" title="Direct link to Distortion Prevention" translate="no">​</a></h3>
+<p>High-ratio limiter prevents distortion at high volumes:</p>
+<p><strong>Configuration</strong>:</p>
+<ul>
+<li class=""><strong>Ratio</strong>: 12:1 (enabled) or 1:1 (disabled)</li>
+<li class=""><strong>Threshold</strong>: -10 dB</li>
+<li class=""><strong>Knee</strong>: 10 dB (soft knee for transparent limiting)</li>
+<li class=""><strong>Attack</strong>: 0 ms (instant response)</li>
+<li class=""><strong>Release</strong>: 0.25 seconds</li>
+</ul>
+<p><strong>When to Use</strong>:</p>
+<ul>
+<li class=""><strong>High-volume listening</strong>: Prevents peaks from distorting</li>
+<li class=""><strong>Heavy EQ boost</strong>: Compensates for increased signal levels</li>
+<li class=""><strong>Dynamic music</strong>: Handles sudden loud passages gracefully</li>
+</ul>
+<p><strong>Transparent Limiting</strong>:</p>
+<ul>
+<li class="">Soft knee characteristic means gradual onset of limiting</li>
+<li class="">Fast attack catches transients before they clip</li>
+<li class="">Short release returns to normal quickly</li>
+<li class="">You hear the music, not the limiter working</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gapless-playback">Gapless Playback<a href="#gapless-playback" class="hash-link" aria-label="Direct link to Gapless Playback" title="Direct link to Gapless Playback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="seamless-track-transitions">Seamless Track Transitions<a href="#seamless-track-transitions" class="hash-link" aria-label="Direct link to Seamless Track Transitions" title="Direct link to Seamless Track Transitions" translate="no">​</a></h3>
+<p>No gaps between consecutive tracks - essential for:</p>
+<ul>
+<li class=""><strong>Live albums</strong>: Continuous concert experience</li>
+<li class=""><strong>Classical music</strong>: Multi-movement works flow naturally</li>
+<li class=""><strong>Concept albums</strong>: Albums designed as continuous listening</li>
+<li class=""><strong>DJ mixes</strong>: Continuous mixes without interruption</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-it-works">How It Works<a href="#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works" translate="no">​</a></h3>
+<p><strong>Three-Track Pool System</strong>:</p>
+<ol>
+<li class=""><strong>Current Track</strong>: What you&#x27;re listening to now</li>
+<li class=""><strong>Next Track</strong>: Pre-loaded and ready for instant playback</li>
+<li class=""><strong>Previous Track</strong>: Cached for instant skip back</li>
+</ol>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li class="">Instant track changes (no loading delay)</li>
+<li class="">Crossfade capability (smooth transitions)</li>
+<li class="">Previous/next always available</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smart-stream-pool">Smart Stream Pool<a href="#smart-stream-pool" class="hash-link" aria-label="Direct link to Smart Stream Pool" title="Direct link to Smart Stream Pool" translate="no">​</a></h3>
+<p>Llamafin maintains multiple audio streams for optimal performance:</p>
+<p><strong>Pool Size</strong>: 6 concurrent streams (configurable 4-10)</p>
+<p><strong>Stream Roles</strong>:</p>
+<ul>
+<li class=""><strong>Current</strong>: Actively playing</li>
+<li class=""><strong>Next</strong>: Preloaded and ready</li>
+<li class=""><strong>Previous</strong>: Cached for instant return</li>
+<li class=""><strong>Spare</strong>: Available for allocation</li>
+<li class=""><strong>Preview</strong>: Isolated 30-second previews</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="crossfade-sweet-fades">Crossfade (Sweet Fades)<a href="#crossfade-sweet-fades" class="hash-link" aria-label="Direct link to Crossfade (Sweet Fades)" title="Direct link to Crossfade (Sweet Fades)" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smooth-track-transitions">Smooth Track Transitions<a href="#smooth-track-transitions" class="hash-link" aria-label="Direct link to Smooth Track Transitions" title="Direct link to Smooth Track Transitions" translate="no">​</a></h3>
+<p>Automatically blend between tracks for a polished listening experience:</p>
+<p><strong>How It Works</strong>:</p>
+<ol>
+<li class="">As current track nears end, preloaded next track is ready</li>
+<li class="">Outgoing track fades out while incoming track fades in</li>
+<li class="">Linear fade curves for natural sound</li>
+<li class="">Configurable fade duration</li>
+</ol>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li class="">Professional DJ-style transitions</li>
+<li class="">Eliminates abrupt track changes</li>
+<li class="">Creates continuous listening flow</li>
+<li class="">Perfect for parties or background music</li>
+</ul>
+<p><strong>Smart Behaviour</strong>:</p>
+<ul>
+<li class="">Won&#x27;t crossfade on last track of queue</li>
+<li class="">Respects track boundaries</li>
+<li class="">Automatically manages stream pool for instant transitions</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-streaming">Audio Streaming<a href="#audio-streaming" class="hash-link" aria-label="Direct link to Audio Streaming" title="Direct link to Audio Streaming" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="three-streaming-strategies">Three Streaming Strategies<a href="#three-streaming-strategies" class="hash-link" aria-label="Direct link to Three Streaming Strategies" title="Direct link to Three Streaming Strategies" translate="no">​</a></h3>
+<p>Llamafin intelligently selects the best streaming method:</p>
+<table><thead><tr><th>Strategy</th><th>When Used</th><th>Characteristics</th></tr></thead><tbody><tr><td><strong>Local</strong></td><td>File already downloaded</td><td>Instant playback, no network needed</td></tr><tr><td><strong>Direct</strong></td><td>Server supports direct streaming</td><td>Original quality, no server processing</td></tr><tr><td><strong>Transcode</strong></td><td>Format conversion needed</td><td>Server converts to compatible format</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hls-streaming-support">HLS Streaming Support<a href="#hls-streaming-support" class="hash-link" aria-label="Direct link to HLS Streaming Support" title="Direct link to HLS Streaming Support" translate="no">​</a></h3>
+<p>For adaptive bitrate streaming:</p>
+<ul>
+<li class=""><strong>HLS.js Integration</strong>: Professional HTTP Live Streaming</li>
+<li class=""><strong>Adaptive Quality</strong>: Automatically adjusts to network conditions</li>
+<li class=""><strong>Buffer Management</strong>: Intelligent pre-buffering prevents dropouts</li>
+<li class=""><strong>Live Streaming</strong>: Supports live radio and broadcasts</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="offline-playback">Offline Playback<a href="#offline-playback" class="hash-link" aria-label="Direct link to Offline Playback" title="Direct link to Offline Playback" translate="no">​</a></h3>
+<p>Downloaded music plays seamlessly:</p>
+<ul>
+<li class=""><strong>Local File Detection</strong>: Recognises downloaded content</li>
+<li class=""><strong>No Network Required</strong>: Complete offline playback</li>
+<li class=""><strong>Format Support</strong>: All downloaded formats supported</li>
+<li class=""><strong>Self-Healing</strong>: Detects stale local data and recovers automatically</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="track-previews">Track Previews<a href="#track-previews" class="hash-link" aria-label="Direct link to Track Previews" title="Direct link to Track Previews" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="30-second-previews">30-Second Previews<a href="#30-second-previews" class="hash-link" aria-label="Direct link to 30-Second Previews" title="Direct link to 30-Second Previews" translate="no">​</a></h3>
+<p>Sample tracks before committing to full playback:</p>
+<p><strong>Preview Features</strong>:</p>
+<ul>
+<li class="">Isolated playback (doesn&#x27;t affect queue)</li>
+<li class="">30-second duration (28 seconds + 2-second fade-out)</li>
+<li class="">Countdown timer displayed</li>
+<li class="">Can stop preview early</li>
+<li class="">Uses separate audio stream</li>
+</ul>
+<p><strong>Use Cases</strong>:</p>
+<ul>
+<li class="">Browse albums quickly</li>
+<li class="">Discover new music</li>
+<li class="">Verify track is what you want</li>
+<li class="">Avoid downloading unwanted tracks</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="playback-controls">Playback Controls<a href="#playback-controls" class="hash-link" aria-label="Direct link to Playback Controls" title="Direct link to Playback Controls" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="standard-controls">Standard Controls<a href="#standard-controls" class="hash-link" aria-label="Direct link to Standard Controls" title="Direct link to Standard Controls" translate="no">​</a></h3>
+<table><thead><tr><th>Control</th><th>Function</th></tr></thead><tbody><tr><td><strong>Play</strong></td><td>Start or resume playback</td></tr><tr><td><strong>Pause</strong></td><td>Pause at current position</td></tr><tr><td><strong>Stop</strong></td><td>Stop playback and clear queue</td></tr><tr><td><strong>Seek</strong></td><td>Jump to any position in track</td></tr><tr><td><strong>Skip Forward</strong></td><td>Quick skip ahead (configurable)</td></tr><tr><td><strong>Skip Backward</strong></td><td>Quick skip back (configurable)</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-controls">Advanced Controls<a href="#advanced-controls" class="hash-link" aria-label="Direct link to Advanced Controls" title="Direct link to Advanced Controls" translate="no">​</a></h3>
+<table><thead><tr><th>Control</th><th>Function</th><th>Range</th></tr></thead><tbody><tr><td><strong>Volume</strong></td><td>Master volume level</td><td>0% to 100%</td></tr><tr><td><strong>Playback Rate</strong></td><td>Speed control</td><td>0.5x to 2.0x</td></tr><tr><td><strong>Balance</strong></td><td>Left/right stereo pan</td><td>-1 (left) to +1 (right)</td></tr><tr><td><strong>Stereo Width</strong></td><td>Soundstage width</td><td>0 (mono) to 2 (ultra-wide)</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-output-devices">Audio Output Devices<a href="#audio-output-devices" class="hash-link" aria-label="Direct link to Audio Output Devices" title="Direct link to Audio Output Devices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multi-device-support">Multi-Device Support<a href="#multi-device-support" class="hash-link" aria-label="Direct link to Multi-Device Support" title="Direct link to Multi-Device Support" translate="no">​</a></h3>
+<p>Select different audio output devices:</p>
+<p><strong>Desktop (Electron)</strong>:</p>
+<ul>
+<li class="">System audio device enumeration</li>
+<li class="">Select specific output devices</li>
+<li class="">USB audio interface support</li>
+<li class="">Bluetooth device selection</li>
+<li class="">Transport type information (USB, Bluetooth, Analog)</li>
+</ul>
+<p><strong>Mobile (Capacitor)</strong>:</p>
+<ul>
+<li class="">Native device selection</li>
+<li class="">Bluetooth headset support</li>
+<li class="">Speaker/earpiece switching</li>
+<li class="">Wired headphone detection</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="device-persistence">Device Persistence<a href="#device-persistence" class="hash-link" aria-label="Direct link to Device Persistence" title="Direct link to Device Persistence" translate="no">​</a></h3>
+<p>Your device choice is remembered:</p>
+<ul>
+<li class="">Selected device saved to settings</li>
+<li class="">Automatically applied on next playback</li>
+<li class="">Reverts to default if device unavailable</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="visualisation-system">Visualisation System<a href="#visualisation-system" class="hash-link" aria-label="Direct link to Visualisation System" title="Direct link to Visualisation System" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-time-audio-analysis">Real-Time Audio Analysis<a href="#real-time-audio-analysis" class="hash-link" aria-label="Direct link to Real-Time Audio Analysis" title="Direct link to Real-Time Audio Analysis" translate="no">​</a></h3>
+<p>Extract frequency data for visual displays:</p>
+<p><strong>Technical Details</strong>:</p>
+<ul>
+<li class=""><strong>FFT Size</strong>: 512 samples (256 frequency bins)</li>
+<li class=""><strong>Smoothing</strong>: 0.75 time constant for stable display</li>
+<li class=""><strong>Frame Rate</strong>: Configurable 30-60 FPS</li>
+<li class=""><strong>Zero Allocation</strong>: Reusable buffer for performance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="visualisation-types">Visualisation Types<a href="#visualisation-types" class="hash-link" aria-label="Direct link to Visualisation Types" title="Direct link to Visualisation Types" translate="no">​</a></h3>
+<p>Llamafin supports multiple visualizer types:</p>
+<p><strong>Butterchurn (MilkDrop)</strong>:</p>
+<ul>
+<li class="">Industry-standard music visualizer</li>
+<li class="">Hundreds of presets available</li>
+<li class="">GPU-accelerated rendering</li>
+<li class="">Full-screen immersive mode</li>
+</ul>
+<p><strong>Spectrum Analyser</strong>:</p>
+<ul>
+<li class="">Bar graph frequency display</li>
+<li class="">Real-time frequency response</li>
+<li class="">Configurable appearance</li>
+<li class="">Rolling window mode</li>
+</ul>
+<p><strong>Performance Optimised</strong>:</p>
+<ul>
+<li class="">Runs outside Angular&#x27;s zone (no UI interference)</li>
+<li class="">Single shared loop for all subscribers</li>
+<li class="">Frame rate control limits CPU usage</li>
+<li class="">Automatically disabled in background</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-context-management">Audio Context Management<a href="#audio-context-management" class="hash-link" aria-label="Direct link to Audio Context Management" title="Direct link to Audio Context Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="browser-autoplay-policy">Browser Autoplay Policy<a href="#browser-autoplay-policy" class="hash-link" aria-label="Direct link to Browser Autoplay Policy" title="Direct link to Browser Autoplay Policy" translate="no">​</a></h3>
+<p>Modern browsers block audio until user interaction:</p>
+<p><strong>How Llamafin Handles This</strong>:</p>
+<ol>
+<li class="">AudioContext created in suspended state</li>
+<li class="">First user gesture (click/tap) activates audio</li>
+<li class="">Pending playback requests automatically retry</li>
+<li class="">Clear messaging if interaction needed</li>
+</ol>
+<p><strong>Seamless Experience</strong>:</p>
+<ul>
+<li class="">You never see autoplay errors</li>
+<li class="">Audio starts immediately after first interaction</li>
+<li class="">Background tabs may require re-activation</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="background-playback">Background Playback<a href="#background-playback" class="hash-link" aria-label="Direct link to Background Playback" title="Direct link to Background Playback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="webview-protection">WebView Protection<a href="#webview-protection" class="hash-link" aria-label="Direct link to WebView Protection" title="Direct link to WebView Protection" translate="no">​</a></h3>
+<p>Keep audio playing even when app is in background:</p>
+<p><strong>Silent Audio Technique</strong>:</p>
+<ul>
+<li class="">Inaudible silent audio stream keeps OS audio pipeline active</li>
+<li class="">Prevents system from suspending playback</li>
+<li class="">Volume: 0.0001 (completely inaudible)</li>
+<li class="">Continuous loop of 10-second silence file</li>
+</ul>
+<p><strong>Smart Activation</strong>:</p>
+<ul>
+<li class="">Active playback always protects WebView</li>
+<li class="">Car mode always enables protection</li>
+<li class="">Paused state has grace period</li>
+<li class="">User configurable in advanced settings</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="engagement-features">Engagement Features<a href="#engagement-features" class="hash-link" aria-label="Direct link to Engagement Features" title="Direct link to Engagement Features" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="continue-listening-notifications">Continue Listening Notifications<a href="#continue-listening-notifications" class="hash-link" aria-label="Direct link to Continue Listening Notifications" title="Direct link to Continue Listening Notifications" translate="no">​</a></h3>
+<p>Smart reminders to come back to your music:</p>
+<p><strong>How It Works</strong>:</p>
+<ol>
+<li class="">When you pause playback, notification scheduled</li>
+<li class="">24-hour delay before notification appears</li>
+<li class="">Includes track artwork and title</li>
+<li class="">Deep link returns you to current track</li>
+<li class="">Cancelled automatically when you resume</li>
+</ol>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li class="">Re-engage with your music library</li>
+<li class="">Remind you what you were listening to</li>
+<li class="">Easy return to your listening session</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-optimizations">Performance Optimizations<a href="#performance-optimizations" class="hash-link" aria-label="Direct link to Performance Optimizations" title="Direct link to Performance Optimizations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="zero-allocation-frequency-data">Zero-Allocation Frequency Data<a href="#zero-allocation-frequency-data" class="hash-link" aria-label="Direct link to Zero-Allocation Frequency Data" title="Direct link to Zero-Allocation Frequency Data" translate="no">​</a></h3>
+<p>Visualisation data extraction optimised for performance:</p>
+<p><strong>Technique</strong>:</p>
+<ul>
+<li class="">Single buffer allocated once</li>
+<li class="">Same reference returned every frame</li>
+<li class="">No garbage collection pressure</li>
+<li class="">60 FPS sustainable</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="requestanimationframe-progress-tracking">RequestAnimationFrame Progress Tracking<a href="#requestanimationframe-progress-tracking" class="hash-link" aria-label="Direct link to RequestAnimationFrame Progress Tracking" title="Direct link to RequestAnimationFrame Progress Tracking" translate="no">​</a></h3>
+<p>High-resolution time updates:</p>
+<ul>
+<li class="">Per-stream RAF loop (not setInterval)</li>
+<li class="">Synchronised with display refresh rate</li>
+<li class="">Smooth, jitter-free progress updates</li>
+<li class="">Only runs when audio context is active</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stream-pool-management">Stream Pool Management<a href="#stream-pool-management" class="hash-link" aria-label="Direct link to Stream Pool Management" title="Direct link to Stream Pool Management" translate="no">​</a></h3>
+<p>Dynamic pool resizing:</p>
+<ul>
+<li class="">Default 6 streams for optimal performance</li>
+<li class="">Configurable from 4 to 10 streams</li>
+<li class="">Changes applied without interrupting playback</li>
+<li class="">Success notification when pool resized</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="error-handling">Error Handling<a href="#error-handling" class="hash-link" aria-label="Direct link to Error Handling" title="Direct link to Error Handling" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="robust-playback">Robust Playback<a href="#robust-playback" class="hash-link" aria-label="Direct link to Robust Playback" title="Direct link to Robust Playback" translate="no">​</a></h3>
+<p>Multiple layers of protection:</p>
+<p><strong>Stale Event Protection</strong>:</p>
+<ul>
+<li class="">Validates track ID before applying updates</li>
+<li class="">Prevents old events from corrupting current state</li>
+<li class="">Essential for gapless playback reliability</li>
+</ul>
+<p><strong>Crossfade Guards</strong>:</p>
+<ul>
+<li class="">Ignores pause events during crossfade</li>
+<li class="">Prevents interrupted transitions</li>
+<li class="">Ensures smooth track changes</li>
+</ul>
+<p><strong>Self-Healing</strong>:</p>
+<ul>
+<li class="">Detects stale local track data</li>
+<li class="">Automatically recovers and retries</li>
+<li class="">Logs warnings for debugging</li>
+<li class="">User notified of recovery</li>
+</ul>
+<p><strong>Stream Allocation</strong>:</p>
+<ul>
+<li class="">Graceful fallback when pool exhausted</li>
+<li class="">Logs critical &quot;pool exhausted&quot; warnings</li>
+<li class="">Continues playback with available resources</li>
+<li class="">Adjustable pool size prevents exhaustion</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-codec-support">Audio Codec Support<a href="#audio-codec-support" class="hash-link" aria-label="Direct link to Audio Codec Support" title="Direct link to Audio Codec Support" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="decoding-capabilities">Decoding Capabilities<a href="#decoding-capabilities" class="hash-link" aria-label="Direct link to Decoding Capabilities" title="Direct link to Decoding Capabilities" translate="no">​</a></h3>
+<p>Llamafin supports all major audio formats:</p>
+<p><strong>Via Direct Streaming</strong>:</p>
+<ul>
+<li class="">MP3, AAC, OGG, FLAC, WAV, ALAC, WMA</li>
+<li class="">Whatever Jellyfin server supports</li>
+</ul>
+<p><strong>Via Transcoding</strong>:</p>
+<ul>
+<li class="">Any format Jellyfin can transcode</li>
+<li class="">Server-side conversion to compatible format</li>
+<li class="">Configurable transcoding quality</li>
+</ul>
+<p><strong>Local Playback</strong>:</p>
+<ul>
+<li class="">All downloaded formats supported</li>
+<li class="">No additional codec requirements</li>
+<li class="">Full offline capability</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-specifications">Technical Specifications<a href="#technical-specifications" class="hash-link" aria-label="Direct link to Technical Specifications" title="Direct link to Technical Specifications" translate="no">​</a></h2>
+<table><thead><tr><th>Specification</th><th>Value</th></tr></thead><tbody><tr><td>EQ Bands</td><td>10 (60Hz - 16kHz)</td></tr><tr><td>EQ Presets</td><td>17 built-in + custom</td></tr><tr><td>EQ Range</td><td>-12 dB to +12 dB per band</td></tr><tr><td>Bass/Treble Range</td><td>-12 dB to +12 dB</td></tr><tr><td>Stereo Width Range</td><td>0 (mono) to 2 (ultra-wide)</td></tr><tr><td>Balance Range</td><td>-1 (left) to +1 (right)</td></tr><tr><td>Playback Rate Range</td><td>0.5x to 2.0x</td></tr><tr><td>Limiter Ratio</td><td>12:1 (enabled) / 1:1 (disabled)</td></tr><tr><td>Limiter Threshold</td><td>-10 dB</td></tr><tr><td>Limiter Attack</td><td>0 ms</td></tr><tr><td>Limiter Release</td><td>250 ms</td></tr><tr><td>ReplayGain Target</td><td>-14 LUFS</td></tr><tr><td>Analyser FFT Size</td><td>512 (256 bins)</td></tr><tr><td>Analyser Smoothing</td><td>0.75</td></tr><tr><td>Visualisation FPS</td><td>30-60 (configurable)</td></tr><tr><td>Stream Pool Size</td><td>6 (configurable 4-10)</td></tr><tr><td>Preview Duration</td><td>30 seconds (28s + 2s fade)</td></tr><tr><td>Haas Delay Max</td><td>100ms</td></tr><tr><td>Haas Delay Per Unit</td><td>15ms</td></tr><tr><td>Silent Track Volume</td><td>0.0001 (-80 dB)</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="related-documentation">Related Documentation<a href="#related-documentation" class="hash-link" aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation" translate="no">​</a></h2>
+<ul>
+<li class=""><a class="" href="/docs/player/USER-player">Player &amp; Queue Management</a></li>
+<li class=""><a class="" href="/docs/sonic-analysis/USER-sonic-analysis">Sonic Analysis</a></li>
+<li class=""><a class="" href="/docs/settings/USER-settings">Settings System</a></li>
+<li class=""><a class="" href="/docs/settings/USER-settings#playback-settings">Audio Effects Configuration</a></li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/authentication/USER-authentication"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Authentication &amp; User Security</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/player/USER-player"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Playback Queue &amp; Player Management</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#audio-processing-pipeline" class="table-of-contents__link toc-highlight">Audio Processing Pipeline</a><ul><li><a href="#signal-chain-architecture" class="table-of-contents__link toc-highlight">Signal Chain Architecture</a></li></ul></li><li><a href="#10-band-graphic-equalizer" class="table-of-contents__link toc-highlight">10-Band Graphic Equalizer</a><ul><li><a href="#precision-frequency-control" class="table-of-contents__link toc-highlight">Precision Frequency Control</a></li><li><a href="#16-built-in-presets" class="table-of-contents__link toc-highlight">16 Built-in Presets</a></li><li><a href="#custom-equalizer" class="table-of-contents__link toc-highlight">Custom Equalizer</a></li><li><a href="#bass--treble-controls" class="table-of-contents__link toc-highlight">Bass &amp; Treble Controls</a></li></ul></li><li><a href="#stereo-imaging" class="table-of-contents__link toc-highlight">Stereo Imaging</a><ul><li><a href="#stereo-panning-balance" class="table-of-contents__link toc-highlight">Stereo Panning (Balance)</a></li><li><a href="#stereo-width-haas-effect" class="table-of-contents__link toc-highlight">Stereo Width (Haas Effect)</a></li></ul></li><li><a href="#loudness-normalisation" class="table-of-contents__link toc-highlight">Loudness normalisation</a><ul><li><a href="#replaygain-support" class="table-of-contents__link toc-highlight">ReplayGain Support</a></li><li><a href="#user-preamp" class="table-of-contents__link toc-highlight">User Preamp</a></li></ul></li><li><a href="#audio-limiter" class="table-of-contents__link toc-highlight">Audio Limiter</a><ul><li><a href="#distortion-prevention" class="table-of-contents__link toc-highlight">Distortion Prevention</a></li></ul></li><li><a href="#gapless-playback" class="table-of-contents__link toc-highlight">Gapless Playback</a><ul><li><a href="#seamless-track-transitions" class="table-of-contents__link toc-highlight">Seamless Track Transitions</a></li><li><a href="#how-it-works" class="table-of-contents__link toc-highlight">How It Works</a></li><li><a href="#smart-stream-pool" class="table-of-contents__link toc-highlight">Smart Stream Pool</a></li></ul></li><li><a href="#crossfade-sweet-fades" class="table-of-contents__link toc-highlight">Crossfade (Sweet Fades)</a><ul><li><a href="#smooth-track-transitions" class="table-of-contents__link toc-highlight">Smooth Track Transitions</a></li></ul></li><li><a href="#audio-streaming" class="table-of-contents__link toc-highlight">Audio Streaming</a><ul><li><a href="#three-streaming-strategies" class="table-of-contents__link toc-highlight">Three Streaming Strategies</a></li><li><a href="#hls-streaming-support" class="table-of-contents__link toc-highlight">HLS Streaming Support</a></li><li><a href="#offline-playback" class="table-of-contents__link toc-highlight">Offline Playback</a></li></ul></li><li><a href="#track-previews" class="table-of-contents__link toc-highlight">Track Previews</a><ul><li><a href="#30-second-previews" class="table-of-contents__link toc-highlight">30-Second Previews</a></li></ul></li><li><a href="#playback-controls" class="table-of-contents__link toc-highlight">Playback Controls</a><ul><li><a href="#standard-controls" class="table-of-contents__link toc-highlight">Standard Controls</a></li><li><a href="#advanced-controls" class="table-of-contents__link toc-highlight">Advanced Controls</a></li></ul></li><li><a href="#audio-output-devices" class="table-of-contents__link toc-highlight">Audio Output Devices</a><ul><li><a href="#multi-device-support" class="table-of-contents__link toc-highlight">Multi-Device Support</a></li><li><a href="#device-persistence" class="table-of-contents__link toc-highlight">Device Persistence</a></li></ul></li><li><a href="#visualisation-system" class="table-of-contents__link toc-highlight">Visualisation System</a><ul><li><a href="#real-time-audio-analysis" class="table-of-contents__link toc-highlight">Real-Time Audio Analysis</a></li><li><a href="#visualisation-types" class="table-of-contents__link toc-highlight">Visualisation Types</a></li></ul></li><li><a href="#audio-context-management" class="table-of-contents__link toc-highlight">Audio Context Management</a><ul><li><a href="#browser-autoplay-policy" class="table-of-contents__link toc-highlight">Browser Autoplay Policy</a></li></ul></li><li><a href="#background-playback" class="table-of-contents__link toc-highlight">Background Playback</a><ul><li><a href="#webview-protection" class="table-of-contents__link toc-highlight">WebView Protection</a></li></ul></li><li><a href="#engagement-features" class="table-of-contents__link toc-highlight">Engagement Features</a><ul><li><a href="#continue-listening-notifications" class="table-of-contents__link toc-highlight">Continue Listening Notifications</a></li></ul></li><li><a href="#performance-optimizations" class="table-of-contents__link toc-highlight">Performance Optimizations</a><ul><li><a href="#zero-allocation-frequency-data" class="table-of-contents__link toc-highlight">Zero-Allocation Frequency Data</a></li><li><a href="#requestanimationframe-progress-tracking" class="table-of-contents__link toc-highlight">RequestAnimationFrame Progress Tracking</a></li><li><a href="#stream-pool-management" class="table-of-contents__link toc-highlight">Stream Pool Management</a></li></ul></li><li><a href="#error-handling" class="table-of-contents__link toc-highlight">Error Handling</a><ul><li><a href="#robust-playback" class="table-of-contents__link toc-highlight">Robust Playback</a></li></ul></li><li><a href="#audio-codec-support" class="table-of-contents__link toc-highlight">Audio Codec Support</a><ul><li><a href="#decoding-capabilities" class="table-of-contents__link toc-highlight">Decoding Capabilities</a></li></ul></li><li><a href="#technical-specifications" class="table-of-contents__link toc-highlight">Technical Specifications</a></li><li><a href="#related-documentation" class="table-of-contents__link toc-highlight">Related Documentation</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Product</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/home#features">Features</a></li><li class="footer__item"><a class="footer__link-item" href="/home#compare">Compare</a></li><li class="footer__item"><a class="footer__link-item" href="/download">Download</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/audio-engine/USER-audio-engine">Audio Engine</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/downloads/USER-downloads">Offline &amp; Downloads</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/dj-mode/USER-dj-mode">DJ Mode</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Legal</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/privacy-policy">Privacy Policy</a></li><li class="footer__item"><a class="footer__link-item" href="/terms-of-service">Terms of Service</a></li><li class="footer__item"><a class="footer__link-item" href="/eula">EULA</a></li><li class="footer__item"><a class="footer__link-item" href="/security">Security</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Llamafin. All rights reserved. Llamafin is not affiliated with Jellyfin, Plex, Spotify, Apple, or Google.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-player/USER-player" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Playback Queue &amp; Player Management | Llamafin</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://llamafin.app/img/llamafin-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://llamafin.app/img/llamafin-social-card.jpg"><meta data-rh="true" property="og:url" content="https://llamafin.app/docs/player/USER-player"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Playback Queue &amp; Player Management | Llamafin"><meta data-rh="true" name="description" content="Audience: End users and technical evaluators"><meta data-rh="true" property="og:description" content="Audience: End users and technical evaluators"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://llamafin.app/docs/player/USER-player"><link data-rh="true" rel="alternate" href="https://llamafin.app/docs/player/USER-player" hreflang="en"><link data-rh="true" rel="alternate" href="https://llamafin.app/docs/player/USER-player" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Playback Queue & Player Management","item":"https://llamafin.app/docs/player/USER-player"}]}</script><link rel="stylesheet" href="/assets/css/styles.dfcef6b7.css">
+<script src="/assets/js/runtime~main.97087c45.js" defer="defer"></script>
+<script src="/assets/js/main.5ba81d92.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>document.documentElement.setAttribute("data-theme","dark"),document.documentElement.setAttribute("data-theme-choice","dark"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/icons/android-chrome-192x192.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/icons/android-chrome-192x192.png" alt="Llamafin Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/icons/android-chrome-192x192.png" alt="Llamafin Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Llamafin</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/getting-started/">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><a class="navbar__item navbar__link navbar-download-btn" href="/download">Get the App</a></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/getting-started/"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/getting-started/"><span title="Getting Started with Llamafin" class="linkLabel_WmDU">Getting Started with Llamafin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/architecture/USER-architecture"><span title="Llamafin Architecture &amp; Technology" class="linkLabel_WmDU">Llamafin Architecture &amp; Technology</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/authentication/USER-authentication"><span title="Authentication &amp; User Security" class="linkLabel_WmDU">Authentication &amp; User Security</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/audio-engine/USER-audio-engine"><span title="Audio &amp; Playback" class="categoryLinkLabel_W154">Audio &amp; Playback</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/audio-engine/USER-audio-engine"><span title="Professional Audio Engine" class="linkLabel_WmDU">Professional Audio Engine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/player/USER-player"><span title="Playback Queue &amp; Player Management" class="linkLabel_WmDU">Playback Queue &amp; Player Management</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/media-session/USER-media-session"><span title="Media Session API" class="linkLabel_WmDU">Media Session API</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/library/USER-library"><span title="Music Library &amp; Discovery" class="categoryLinkLabel_W154">Music Library &amp; Discovery</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/downloads/USER-downloads"><span title="Offline &amp; Downloads" class="categoryLinkLabel_W154">Offline &amp; Downloads</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/connect-p2p/USER-connect-p2p"><span title="Connectivity &amp; Remote Control" class="categoryLinkLabel_W154">Connectivity &amp; Remote Control</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/settings/USER-settings"><span title="Settings &amp; Customisation" class="categoryLinkLabel_W154">Settings &amp; Customisation</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/ui-components/USER-ui-components"><span title="UI &amp; Experience" class="categoryLinkLabel_W154">UI &amp; Experience</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/internationalization/USER-internationalization"><span title="Advanced Features" class="categoryLinkLabel_W154">Advanced Features</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/security/USER-security"><span title="Security &amp; Technical" class="categoryLinkLabel_W154">Security &amp; Technical</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/platform-support/USER-platform-support"><span title="Platform &amp; Deployment" class="categoryLinkLabel_W154">Platform &amp; Deployment</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Audio &amp; Playback</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Playback Queue &amp; Player Management</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Playback Queue &amp; Player Management</h1></header>
+<blockquote>
+<p><strong>Audience</strong>: End users and technical evaluators
+<strong>Last Updated</strong>: 2026-04-04
+<strong>Version</strong>: 2.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>Llamafin&#x27;s player system manages playback queues, shuffle and repeat modes, multi-device playback targets, and provides intelligent features like auto-resume, gapless playback, and continuous autoplay.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="queue-management">Queue Management<a href="#queue-management" class="hash-link" aria-label="Direct link to Queue Management" title="Direct link to Queue Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="building-your-queue">Building Your Queue<a href="#building-your-queue" class="hash-link" aria-label="Direct link to Building Your Queue" title="Direct link to Building Your Queue" translate="no">​</a></h3>
+<p>Multiple ways to start listening:</p>
+<table><thead><tr><th>Action</th><th>What It Does</th></tr></thead><tbody><tr><td><strong>Play Album</strong></td><td>Loads all tracks from the album into queue</td></tr><tr><td><strong>Play Artist</strong></td><td>Loads all songs from the artist</td></tr><tr><td><strong>Play Playlist</strong></td><td>Loads your curated playlist</td></tr><tr><td><strong>Play Genre</strong></td><td>Loads all songs matching the genre</td></tr><tr><td><strong>Play Studio</strong></td><td>Loads all albums from the record label/studio</td></tr><tr><td><strong>Play Song</strong></td><td>Single song playback (can add more later)</td></tr><tr><td><strong>Play All Downloads</strong></td><td>All your offline content</td></tr><tr><td><strong>Play All From Library</strong></td><td>Entire music library (up to 500 tracks)</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="queue-structure">Queue Structure<a href="#queue-structure" class="hash-link" aria-label="Direct link to Queue Structure" title="Direct link to Queue Structure" translate="no">​</a></h3>
+<p>Your playback queue contains:</p>
+<ul>
+<li class=""><strong>Full Track Metadata</strong>: Title, artist, album, artwork, duration, play counts</li>
+<li class=""><strong>Original Position Tracking</strong>: Remembers where each track came from</li>
+<li class=""><strong>Local File References</strong>: Points to downloaded copies when available</li>
+<li class=""><strong>Play Statistics</strong>: Times played, last played date</li>
+<li class=""><strong>Sonic Analysis Data</strong>: Audio fingerprints for similarity matching</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="queue-operations">Queue Operations<a href="#queue-operations" class="hash-link" aria-label="Direct link to Queue Operations" title="Direct link to Queue Operations" translate="no">​</a></h3>
+<table><thead><tr><th>Operation</th><th>Description</th></tr></thead><tbody><tr><td><strong>Play Next</strong></td><td>Insert tracks immediately after current track</td></tr><tr><td><strong>Add to Queue</strong></td><td>Append tracks to the end of the queue</td></tr><tr><td><strong>Clear Queue</strong></td><td>Stop playback and remove all tracks</td></tr><tr><td><strong>Stop &amp; Clear</strong></td><td>Graceful shutdown (closes player UI first)</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shuffle-mode">Shuffle Mode<a href="#shuffle-mode" class="hash-link" aria-label="Direct link to Shuffle Mode" title="Direct link to Shuffle Mode" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smart-shuffle-algorithm">Smart Shuffle Algorithm<a href="#smart-shuffle-algorithm" class="hash-link" aria-label="Direct link to Smart Shuffle Algorithm" title="Direct link to Smart Shuffle Algorithm" translate="no">​</a></h3>
+<p>Llamafin implements an intelligent shuffle that respects your listening history:</p>
+<p><strong>How It Works</strong>:</p>
+<ol>
+<li class="">
+<p><strong>Turning Shuffle ON</strong>:</p>
+<ul>
+<li class="">Identifies your current position in the queue</li>
+<li class="">Preserves all tracks you&#x27;ve already heard (history)</li>
+<li class="">Randomly shuffles only the upcoming tracks</li>
+<li class="">You won&#x27;t hear recently played tracks again</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Turning Shuffle OFF</strong>:</p>
+<ul>
+<li class="">Restores the original order perfectly</li>
+<li class="">Uses original position tracking to rebuild sequence</li>
+<li class="">Returns to exactly how the album/playlist was ordered</li>
+</ul>
+</li>
+</ol>
+<p><strong>Example</strong>:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Original Queue:  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Currently at:    [1, 2, 3] ←  (playing track 3)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Shuffle ON:      [1, 2, 3 | 7, 4, 9, 5, 10, 6, 8]</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">                 ↑ History preserved ↑ Upcoming shuffled</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Shuffle OFF:     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">                 ← Original order restored</span><br></span></code></pre></div></div>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li class="">No duplicate listening in current session</li>
+<li class="">Easy return to original order</li>
+<li class="">Works with any queue size (minimum 2 tracks)</li>
+<li class="">Persists across app restarts</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="repeat-modes">Repeat Modes<a href="#repeat-modes" class="hash-link" aria-label="Direct link to Repeat Modes" title="Direct link to Repeat Modes" translate="no">​</a></h2>
+<p>Three distinct repeat behaviors:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="repeat-off-default">Repeat Off (Default)<a href="#repeat-off-default" class="hash-link" aria-label="Direct link to Repeat Off (Default)" title="Direct link to Repeat Off (Default)" translate="no">​</a></h3>
+<p><strong>Behaviour</strong>:</p>
+<ul>
+<li class="">Plays through queue normally</li>
+<li class="">Pauses when last track ends</li>
+<li class="">Rewinds to start of last track (position 0:00)</li>
+<li class="">Ready for manual selection</li>
+</ul>
+<p><strong>Best For</strong>:</p>
+<ul>
+<li class="">Intentional listening sessions</li>
+<li class="">Working through albums in order</li>
+<li class="">Following curated playlists</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="repeat-one">Repeat One<a href="#repeat-one" class="hash-link" aria-label="Direct link to Repeat One" title="Direct link to Repeat One" translate="no">​</a></h3>
+<p><strong>Behaviour</strong>:</p>
+<ul>
+<li class="">Replays current track indefinitely</li>
+<li class="">Doesn&#x27;t advance to next track</li>
+<li class="">Manual intervention required to stop</li>
+</ul>
+<p><strong>Best For</strong>:</p>
+<ul>
+<li class="">Learning lyrics or musical parts</li>
+<li class="">Focusing on a single song</li>
+<li class="">Background ambiance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="repeat-all">Repeat All<a href="#repeat-all" class="hash-link" aria-label="Direct link to Repeat All" title="Direct link to Repeat All" translate="no">​</a></h3>
+<p><strong>Behaviour</strong>:</p>
+<ul>
+<li class="">When last track ends, wraps to first track</li>
+<li class="">Continuous loop through entire queue</li>
+<li class="">Seamless transition (no pause at boundary)</li>
+<li class="">Shuffle and repeat work together</li>
+</ul>
+<p><strong>Best For</strong>:</p>
+<ul>
+<li class="">All-day background music</li>
+<li class="">Parties and events</li>
+<li class="">Shuffle + repeat for infinite variety</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="playback-controls">Playback Controls<a href="#playback-controls" class="hash-link" aria-label="Direct link to Playback Controls" title="Direct link to Playback Controls" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="standard-controls">Standard Controls<a href="#standard-controls" class="hash-link" aria-label="Direct link to Standard Controls" title="Direct link to Standard Controls" translate="no">​</a></h3>
+<table><thead><tr><th>Control</th><th>Function</th></tr></thead><tbody><tr><td><strong>Play</strong></td><td>Resume paused playback</td></tr><tr><td><strong>Pause</strong></td><td>Pause at current position</td></tr><tr><td><strong>Stop</strong></td><td>Stop and clear queue</td></tr><tr><td><strong>Next Track</strong></td><td>Skip to next track in queue</td></tr><tr><td><strong>Previous Track</strong></td><td>Go back or restart current track</td></tr><tr><td><strong>Seek</strong></td><td>Jump to any position in track</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="previous-track-smart-behaviour">Previous Track Smart Behaviour<a href="#previous-track-smart-behaviour" class="hash-link" aria-label="Direct link to Previous Track Smart Behaviour" title="Direct link to Previous Track Smart Behaviour" translate="no">​</a></h3>
+<p>The previous button works intelligently:</p>
+<p><strong>If more than 5 seconds into track</strong>:</p>
+<ul>
+<li class="">Restarts current track from beginning</li>
+<li class="">Standard music player behaviour</li>
+<li class="">Quick access to track start</li>
+</ul>
+<p><strong>If less than 5 seconds into track</strong>:</p>
+<ul>
+<li class="">Goes to previous track in queue</li>
+<li class="">In shuffle mode: restarts current (previous is undefined)</li>
+<li class="">At queue start: restarts current track</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-controls">Advanced Controls<a href="#advanced-controls" class="hash-link" aria-label="Direct link to Advanced Controls" title="Direct link to Advanced Controls" translate="no">​</a></h3>
+<table><thead><tr><th>Control</th><th>Range</th><th>Function</th></tr></thead><tbody><tr><td><strong>Volume</strong></td><td>0% to 100%</td><td>Master playback volume</td></tr><tr><td><strong>Mute Toggle</strong></td><td>On/Off</td><td>Quick silence without losing volume setting</td></tr><tr><td><strong>Seek Bar</strong></td><td>0:00 to track end</td><td>Scrub to any position</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="track-previews">Track Previews<a href="#track-previews" class="hash-link" aria-label="Direct link to Track Previews" title="Direct link to Track Previews" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="quick-audition-system">Quick Audition System<a href="#quick-audition-system" class="hash-link" aria-label="Direct link to Quick Audition System" title="Direct link to Quick Audition System" translate="no">​</a></h3>
+<p>Sample any track before committing to full playback:</p>
+<p><strong>Preview Features</strong>:</p>
+<ul>
+<li class=""><strong>30-Second Duration</strong>: Enough to judge the track</li>
+<li class=""><strong>Isolated Playback</strong>: Doesn&#x27;t affect your queue or current session</li>
+<li class=""><strong>Separate Audio Stream</strong>: Uses dedicated preview stream</li>
+<li class=""><strong>Visual Countdown</strong>: Shows remaining preview time</li>
+<li class=""><strong>Early Stop</strong>: Cancel preview anytime</li>
+</ul>
+<p><strong>Use Cases</strong>:</p>
+<ul>
+<li class="">Browse albums quickly</li>
+<li class="">Verify track before downloading</li>
+<li class="">Discover new music efficiently</li>
+<li class="">Avoid queue interruptions</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="multi-device-playback">Multi-Device Playback<a href="#multi-device-playback" class="hash-link" aria-label="Direct link to Multi-Device Playback" title="Direct link to Multi-Device Playback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="playback-targets">Playback Targets<a href="#playback-targets" class="hash-link" aria-label="Direct link to Playback Targets" title="Direct link to Playback Targets" translate="no">​</a></h3>
+<p>Llamafin can play music on different devices:</p>
+<table><thead><tr><th>Target</th><th>Description</th></tr></thead><tbody><tr><td><strong>Local</strong></td><td>Play on current device (default)</td></tr><tr><td><strong>Jellyfin Session</strong></td><td>Remote control another Jellyfin client</td></tr><tr><td><strong>Llamafin Connect</strong></td><td>Control another Llamafin device directly</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="seamless-target-switching">Seamless Target Switching<a href="#seamless-target-switching" class="hash-link" aria-label="Direct link to Seamless Target Switching" title="Direct link to Seamless Target Switching" translate="no">​</a></h3>
+<p>All controls work regardless of target:</p>
+<ul>
+<li class=""><strong>Play/Pause/Stop</strong>: Routed to correct device</li>
+<li class=""><strong>Volume Control</strong>: Adjusted on target device</li>
+<li class=""><strong>Next/Previous</strong>: Queue management on target</li>
+<li class=""><strong>Seek</strong>: Position control on target</li>
+<li class=""><strong>Queue Operations</strong>: Managed locally, executed remotely</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="unified-display">Unified Display<a href="#unified-display" class="hash-link" aria-label="Direct link to Unified Display" title="Direct link to Unified Display" translate="no">​</a></h3>
+<p>The player interface shows unified information:</p>
+<ul>
+<li class="">Current track (local or remote)</li>
+<li class="">Queue contents (synchronised)</li>
+<li class="">Playback progress (real-time)</li>
+<li class="">Volume level (target device)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="queue-persistence">Queue Persistence<a href="#queue-persistence" class="hash-link" aria-label="Direct link to Queue Persistence" title="Direct link to Queue Persistence" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="automatic-state-saving">Automatic State Saving<a href="#automatic-state-saving" class="hash-link" aria-label="Direct link to Automatic State Saving" title="Direct link to Automatic State Saving" translate="no">​</a></h3>
+<p>Your playback session is automatically preserved:</p>
+<p><strong>What Gets Saved</strong>:</p>
+<ul>
+<li class="">Complete playback queue (all tracks)</li>
+<li class="">Current track and position</li>
+<li class="">Shuffle mode status</li>
+<li class="">Repeat mode setting</li>
+<li class="">Playback target selection</li>
+<li class="">Autoplay queue flag</li>
+</ul>
+<p><strong>When It&#x27;s Saved</strong>:</p>
+<ul>
+<li class="">Queue changes (new playlist, add/remove tracks)</li>
+<li class="">Track changes (next, previous)</li>
+<li class="">Mode changes (shuffle, repeat toggle)</li>
+<li class="">Target changes (switch playback device)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="session-restoration">Session Restoration<a href="#session-restoration" class="hash-link" aria-label="Direct link to Session Restoration" title="Direct link to Session Restoration" translate="no">​</a></h3>
+<p>When you reopen Llamafin:</p>
+<ol>
+<li class=""><strong>Stored State Loaded</strong>: Queue, modes, target restored</li>
+<li class=""><strong>Current Track Restored</strong>: Your last track selected</li>
+<li class=""><strong>Autoplay Check</strong>: If enabled, playback resumes automatically</li>
+<li class=""><strong>Manual Start</strong>: If autoplay off, press play to continue</li>
+</ol>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li class="">Never lose your place</li>
+<li class="">Resume listening instantly</li>
+<li class="">Perfect for commutes or work sessions</li>
+<li class="">Cross-restart persistence</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="adjacent-track-preloading">Adjacent Track Preloading<a href="#adjacent-track-preloading" class="hash-link" aria-label="Direct link to Adjacent Track Preloading" title="Direct link to Adjacent Track Preloading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="intelligent-buffering">Intelligent Buffering<a href="#intelligent-buffering" class="hash-link" aria-label="Direct link to Intelligent Buffering" title="Direct link to Intelligent Buffering" translate="no">​</a></h3>
+<p>Llamafin prepares upcoming tracks before you need them:</p>
+<p><strong>How It Works</strong>:</p>
+<ol>
+<li class="">When you start playing a track, the system identifies:<!-- -->
+<ul>
+<li class="">Next track in queue</li>
+<li class="">Previous track in queue</li>
+</ul>
+</li>
+<li class="">Both tracks are preloaded into the audio engine</li>
+<li class="">Next track is ready for instant playback</li>
+<li class="">Previous track cached for immediate skip-back</li>
+</ol>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li class=""><strong>Zero Delay</strong>: Next track starts instantly</li>
+<li class=""><strong>Smooth Experience</strong>: No loading pauses between tracks</li>
+<li class=""><strong>Instant Navigation</strong>: Skip forward/back immediately</li>
+<li class=""><strong>Gapless Playback</strong>: Seamless transitions enabled</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="debounced-processing">Debounced Processing<a href="#debounced-processing" class="hash-link" aria-label="Direct link to Debounced Processing" title="Direct link to Debounced Processing" translate="no">​</a></h3>
+<p>Preloading is optimised:</p>
+<ul>
+<li class="">250ms delay prevents excessive loading during rapid skips</li>
+<li class="">Only processes when all dependencies available (settings, network, user)</li>
+<li class="">Validates track data before preloading</li>
+<li class="">Graceful handling of missing tracks</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="autoplay--continuous-playback">Autoplay &amp; Continuous Playback<a href="#autoplay--continuous-playback" class="hash-link" aria-label="Direct link to Autoplay &amp; Continuous Playback" title="Direct link to Autoplay &amp; Continuous Playback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smart-queue-extension">Smart Queue Extension<a href="#smart-queue-extension" class="hash-link" aria-label="Direct link to Smart Queue Extension" title="Direct link to Smart Queue Extension" translate="no">​</a></h3>
+<p>Never run out of music automatically:</p>
+<p><strong>Detection</strong>:</p>
+<ul>
+<li class="">Monitors remaining tracks in queue</li>
+<li class="">Triggers when 5 or fewer tracks remain</li>
+<li class="">Checks if DJ mode is active</li>
+</ul>
+<p><strong>Priority System</strong>:</p>
+<ol>
+<li class="">
+<p><strong>Single-Artist Queue</strong>:</p>
+<ul>
+<li class="">Detects if all tracks share same album artist</li>
+<li class="">Finds next/previous album from same artist</li>
+<li class="">Loads album tracks into queue</li>
+<li class="">Maintains artist context</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Mixed-Artist Queue</strong>:</p>
+<ul>
+<li class="">Falls back to DJ mode</li>
+<li class="">Generates tracks based on current song</li>
+<li class="">Uses sonic similarity or smart algorithms</li>
+<li class="">Extends queue seamlessly</li>
+</ul>
+</li>
+</ol>
+<p><strong>Album Autoplay</strong>:</p>
+<ul>
+<li class="">Sorts artist&#x27;s albums by year and name</li>
+<li class="">Selects next album (configurable direction)</li>
+<li class="">Wraps around at end of discography</li>
+<li class="">Loads tracks maintaining album order</li>
+</ul>
+<p><strong>DJ Mode Fallback</strong>:</p>
+<ul>
+<li class="">If album autoplay fails or not applicable</li>
+<li class="">DJ generates tracks similar to current</li>
+<li class="">Uses audio fingerprinting</li>
+<li class="">Infinite music generation</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="voice-search-playback">Voice Search Playback<a href="#voice-search-playback" class="hash-link" aria-label="Direct link to Voice Search Playback" title="Direct link to Voice Search Playback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="speak-to-play">Speak to Play<a href="#speak-to-play" class="hash-link" aria-label="Direct link to Speak to Play" title="Direct link to Speak to Play" translate="no">​</a></h3>
+<p>Voice-activated music selection:</p>
+<p><strong>How It Works</strong>:</p>
+<ol>
+<li class="">Speak your request (&quot;Play rock music&quot; or &quot;Play Beatles&quot;)</li>
+<li class="">Llamafin searches your library</li>
+<li class="">Results analyzed in priority order:<!-- -->
+<ul>
+<li class=""><strong>Priority 1</strong>: Songs (offline first, then online)</li>
+<li class=""><strong>Priority 2</strong>: Albums</li>
+<li class=""><strong>Priority 3</strong>: Artists</li>
+<li class=""><strong>Priority 4</strong>: Playlists</li>
+</ul>
+</li>
+<li class="">Best match starts playing immediately</li>
+</ol>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li class="">Hands-free music selection</li>
+<li class="">Quick access while driving</li>
+<li class="">Natural language queries</li>
+<li class="">Offline results prioritised</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="self-healing-playback">Self-Healing Playback<a href="#self-healing-playback" class="hash-link" aria-label="Direct link to Self-Healing Playback" title="Direct link to Self-Healing Playback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="automatic-error-recovery">Automatic Error Recovery<a href="#automatic-error-recovery" class="hash-link" aria-label="Direct link to Automatic Error Recovery" title="Direct link to Automatic Error Recovery" translate="no">​</a></h3>
+<p>Llamafin fixes problems without interrupting your music:</p>
+<p><strong>Missing Local File Detection</strong>:</p>
+<ul>
+<li class="">Track marked as downloaded but file is gone</li>
+<li class="">Happens if you delete downloads while in queue</li>
+<li class="">Detected when audio engine tries to play</li>
+</ul>
+<p><strong>Automatic Recovery</strong>:</p>
+<ol>
+<li class="">Strips stale local file references</li>
+<li class="">Re-fetches track metadata from server</li>
+<li class="">Updates queue with fresh data</li>
+<li class="">Retries playback as remote stream</li>
+<li class="">Notifies you of recovery</li>
+</ol>
+<p><strong>Graceful Degradation</strong>:</p>
+<ul>
+<li class="">If recovery fails completely</li>
+<li class="">For playback: informs you and advances to next track</li>
+<li class="">For preloading: fails silently (no interruption)</li>
+<li class="">Queue remains intact, playback continues</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="download-deletion-handling">Download Deletion Handling<a href="#download-deletion-handling" class="hash-link" aria-label="Direct link to Download Deletion Handling" title="Direct link to Download Deletion Handling" translate="no">​</a></h3>
+<p>When you delete a download that&#x27;s in the queue:</p>
+<ul>
+<li class="">Local file reference cleared immediately</li>
+<li class="">Track marked as needing remote stream</li>
+<li class="">Next playback fetches from server</li>
+<li class="">No errors or interruptions</li>
+<li class="">Queue position preserved</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rolling-cache-system">Rolling Cache System<a href="#rolling-cache-system" class="hash-link" aria-label="Direct link to Rolling Cache System" title="Direct link to Rolling Cache System" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smart-download-window">Smart Download Window<a href="#smart-download-window" class="hash-link" aria-label="Direct link to Smart Download Window" title="Direct link to Smart Download Window" translate="no">​</a></h3>
+<p>Automatic management of offline content around your current position:</p>
+<p><strong>How It Works</strong>:</p>
+<ul>
+<li class="">Maintains a window of downloaded tracks around current playback</li>
+<li class="">Downloads upcoming tracks before you reach them</li>
+<li class="">Removes old downloads behind you to save space</li>
+<li class="">Configurable cache size (WiFi and cellular separate)</li>
+</ul>
+<p><strong>Cache Window</strong>:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">[Old Downloads] [Current Track] [Future Downloads]</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">      ↓                ↓                ↓</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">   Delete Zone      Playing Now      Addition Zone</span><br></span></code></pre></div></div>
+<p><strong>Configurable Settings</strong>:</p>
+<ul>
+<li class=""><strong>Next Track Only</strong>: Cache just 1 upcoming track</li>
+<li class=""><strong>Numeric Limit</strong>: Cache N tracks ahead (e.g., 5, 10, 20)</li>
+<li class=""><strong>Unlimited</strong>: Cache entire remaining queue</li>
+</ul>
+<p><strong>Network Awareness</strong>:</p>
+<ul>
+<li class="">Respects cellular download settings</li>
+<li class="">Different limits for WiFi vs cellular</li>
+<li class="">Won&#x27;t download on cellular if disabled</li>
+<li class="">Guards prevent excessive data usage</li>
+</ul>
+<p><strong>Repeat All Support</strong>:</p>
+<ul>
+<li class="">When approaching end of queue</li>
+<li class="">Wraps around to cache tracks from beginning</li>
+<li class="">Maintains full cache window even at queue end</li>
+<li class="">Seamless looping with offline content</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="proactive-caching">Proactive Caching<a href="#proactive-caching" class="hash-link" aria-label="Direct link to Proactive Caching" title="Direct link to Proactive Caching" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="predictive-downloads">Predictive Downloads<a href="#predictive-downloads" class="hash-link" aria-label="Direct link to Predictive Downloads" title="Direct link to Predictive Downloads" translate="no">​</a></h3>
+<p>Llamafin anticipates your needs:</p>
+<p><strong>When Queue is Set</strong>:</p>
+<ul>
+<li class="">Analyses entire queue for missing downloads</li>
+<li class="">Calculates lookahead window based on settings</li>
+<li class="">Filters out tracks already downloaded</li>
+<li class="">Queues items for background download</li>
+</ul>
+<p><strong>Multiple Triggers</strong>:</p>
+<ol>
+<li class=""><strong>Queue Change</strong>: When you modify the queue</li>
+<li class=""><strong>Track Change</strong>: When advancing to next track</li>
+<li class=""><strong>Periodic Check</strong>: Every 30 seconds during playback</li>
+</ol>
+<p><strong>Guard Clauses</strong>:</p>
+<ul>
+<li class="">Caching must be enabled in settings</li>
+<li class="">Respects prefer_downloaded_media setting</li>
+<li class="">Checks cellular permissions</li>
+<li class="">Skips if all items already cached</li>
+</ul>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li class="">Seamless offline playback</li>
+<li class="">No manual download management</li>
+<li class="">Intelligent use of storage space</li>
+<li class="">Always prepared for network loss</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-audio-engine">Integration with Audio Engine<a href="#integration-with-audio-engine" class="hash-link" aria-label="Direct link to Integration with Audio Engine" title="Direct link to Integration with Audio Engine" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="clean-separation-of-concerns">Clean Separation of Concerns<a href="#clean-separation-of-concerns" class="hash-link" aria-label="Direct link to Clean Separation of Concerns" title="Direct link to Clean Separation of Concerns" translate="no">​</a></h3>
+<p>Player and Audio Engine work together:</p>
+<p><strong>Player Responsibilities</strong>:</p>
+<ul>
+<li class="">Queue management</li>
+<li class="">Shuffle and repeat logic</li>
+<li class="">Track selection and ordering</li>
+<li class="">Multi-device targeting</li>
+<li class="">State persistence</li>
+</ul>
+<p><strong>Audio Engine Responsibilities</strong>:</p>
+<ul>
+<li class="">Actual audio playback</li>
+<li class="">Web Audio API processing</li>
+<li class="">Stream management</li>
+<li class="">Gapless transitions</li>
+<li class="">Visualisation data</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="communication-flow">Communication Flow<a href="#communication-flow" class="hash-link" aria-label="Direct link to Communication Flow" title="Direct link to Communication Flow" translate="no">​</a></h3>
+<p><strong>Player → Audio Engine</strong>:</p>
+<ul>
+<li class="">&quot;Play this track&quot; (requestPlayback)</li>
+<li class="">&quot;Pause/Resume/Stop&quot;</li>
+<li class="">&quot;Seek to position&quot;</li>
+<li class="">&quot;Set volume&quot;</li>
+<li class="">&quot;Preload these adjacent tracks&quot;</li>
+</ul>
+<p><strong>Audio Engine → Player</strong>:</p>
+<ul>
+<li class="">&quot;Playback started&quot; (sync state)</li>
+<li class="">&quot;Playback ended&quot; (trigger next track)</li>
+<li class="">&quot;Buffering status&quot; (update UI)</li>
+<li class="">&quot;Error occurred&quot; (handle recovery)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="synchronisation">synchronisation<a href="#synchronisation" class="hash-link" aria-label="Direct link to synchronisation" title="Direct link to synchronisation" translate="no">​</a></h3>
+<p>When audio engine starts playing:</p>
+<ol>
+<li class="">Player validates track is in queue</li>
+<li class="">Updates current track reference if needed</li>
+<li class="">Preserves rich metadata (sonic analysis, etc.)</li>
+<li class="">Does NOT re-trigger playback pipeline</li>
+<li class="">Records offline playback statistics</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="error-handling">Error Handling<a href="#error-handling" class="hash-link" aria-label="Direct link to Error Handling" title="Direct link to Error Handling" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="loading-errors">Loading Errors<a href="#loading-errors" class="hash-link" aria-label="Direct link to Loading Errors" title="Direct link to Loading Errors" translate="no">​</a></h3>
+<p><strong>Empty Playlists</strong>:</p>
+<ul>
+<li class="">Detected before queue is set</li>
+<li class="">User notified with clear message</li>
+<li class="">Queue remains unchanged</li>
+<li class="">Loading state cleared</li>
+</ul>
+<p><strong>Missing User ID</strong>:</p>
+<ul>
+<li class="">Validated before API calls</li>
+<li class="">Prevents failed requests</li>
+<li class="">Informs user of authentication issue</li>
+<li class="">Suggests re-login</li>
+</ul>
+<p><strong>Network Failures</strong>:</p>
+<ul>
+<li class="">Retry logic for transient errors</li>
+<li class="">Graceful degradation to offline mode</li>
+<li class="">User notified of persistent failures</li>
+<li class="">Queue preserved for retry</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="playback-errors">Playback Errors<a href="#playback-errors" class="hash-link" aria-label="Direct link to Playback Errors" title="Direct link to Playback Errors" translate="no">​</a></h3>
+<p><strong>Stream Failures</strong>:</p>
+<ul>
+<li class="">Self-healing attempts recovery</li>
+<li class="">Falls back to remote stream if local missing</li>
+<li class="">Advances to next track if unrecoverable</li>
+<li class="">Maintains queue integrity</li>
+</ul>
+<p><strong>Device Errors</strong>:</p>
+<ul>
+<li class="">Audio context suspension handled</li>
+<li class="">Autoplay policy compliance</li>
+<li class="">User gesture requirements communicated</li>
+<li class="">Pending play requests retry automatically</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-specifications">Technical Specifications<a href="#technical-specifications" class="hash-link" aria-label="Direct link to Technical Specifications" title="Direct link to Technical Specifications" translate="no">​</a></h2>
+<table><thead><tr><th>Specification</th><th>Value</th></tr></thead><tbody><tr><td>Queue Size Limit</td><td>None (limited by memory)</td></tr><tr><td>Shuffle Algorithm</td><td>Fisher-Yates (Knuth)</td></tr><tr><td>Repeat Modes</td><td>3 (off, one, all)</td></tr><tr><td>Previous Track Threshold</td><td>5 seconds</td></tr><tr><td>Preload Debounce</td><td>250ms</td></tr><tr><td>Rolling Cache Debounce (track)</td><td>100ms</td></tr><tr><td>Rolling Cache Debounce (queue)</td><td>150ms</td></tr><tr><td>Periodic Cache Check</td><td>Every 30 seconds</td></tr><tr><td>Crossfade Buffer</td><td>2 tracks</td></tr><tr><td>Autoplay Trigger Threshold</td><td>≤ 5 tracks remaining</td></tr><tr><td>Library Play All Limit</td><td>500 tracks</td></tr><tr><td>Storage Keys</td><td>current_item, shuffle_status, repeat_status, playback_target</td></tr><tr><td>Playback Targets</td><td>local, Jellyfin session, Connect peer</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="related-documentation">Related Documentation<a href="#related-documentation" class="hash-link" aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation" translate="no">​</a></h2>
+<ul>
+<li class=""><a class="" href="/docs/audio-engine/USER-audio-engine">Audio Engine</a></li>
+<li class=""><a class="" href="/docs/dj-mode/USER-dj-mode">DJ Mode</a></li>
+<li class=""><a class="" href="/docs/downloads/USER-downloads">Downloads System</a></li>
+<li class=""><a class="" href="/docs/connect-p2p/USER-connect-p2p">Remote Device Control</a></li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/audio-engine/USER-audio-engine"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Professional Audio Engine</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/media-session/USER-media-session"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Media Session API</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#queue-management" class="table-of-contents__link toc-highlight">Queue Management</a><ul><li><a href="#building-your-queue" class="table-of-contents__link toc-highlight">Building Your Queue</a></li><li><a href="#queue-structure" class="table-of-contents__link toc-highlight">Queue Structure</a></li><li><a href="#queue-operations" class="table-of-contents__link toc-highlight">Queue Operations</a></li></ul></li><li><a href="#shuffle-mode" class="table-of-contents__link toc-highlight">Shuffle Mode</a><ul><li><a href="#smart-shuffle-algorithm" class="table-of-contents__link toc-highlight">Smart Shuffle Algorithm</a></li></ul></li><li><a href="#repeat-modes" class="table-of-contents__link toc-highlight">Repeat Modes</a><ul><li><a href="#repeat-off-default" class="table-of-contents__link toc-highlight">Repeat Off (Default)</a></li><li><a href="#repeat-one" class="table-of-contents__link toc-highlight">Repeat One</a></li><li><a href="#repeat-all" class="table-of-contents__link toc-highlight">Repeat All</a></li></ul></li><li><a href="#playback-controls" class="table-of-contents__link toc-highlight">Playback Controls</a><ul><li><a href="#standard-controls" class="table-of-contents__link toc-highlight">Standard Controls</a></li><li><a href="#previous-track-smart-behaviour" class="table-of-contents__link toc-highlight">Previous Track Smart Behaviour</a></li><li><a href="#advanced-controls" class="table-of-contents__link toc-highlight">Advanced Controls</a></li></ul></li><li><a href="#track-previews" class="table-of-contents__link toc-highlight">Track Previews</a><ul><li><a href="#quick-audition-system" class="table-of-contents__link toc-highlight">Quick Audition System</a></li></ul></li><li><a href="#multi-device-playback" class="table-of-contents__link toc-highlight">Multi-Device Playback</a><ul><li><a href="#playback-targets" class="table-of-contents__link toc-highlight">Playback Targets</a></li><li><a href="#seamless-target-switching" class="table-of-contents__link toc-highlight">Seamless Target Switching</a></li><li><a href="#unified-display" class="table-of-contents__link toc-highlight">Unified Display</a></li></ul></li><li><a href="#queue-persistence" class="table-of-contents__link toc-highlight">Queue Persistence</a><ul><li><a href="#automatic-state-saving" class="table-of-contents__link toc-highlight">Automatic State Saving</a></li><li><a href="#session-restoration" class="table-of-contents__link toc-highlight">Session Restoration</a></li></ul></li><li><a href="#adjacent-track-preloading" class="table-of-contents__link toc-highlight">Adjacent Track Preloading</a><ul><li><a href="#intelligent-buffering" class="table-of-contents__link toc-highlight">Intelligent Buffering</a></li><li><a href="#debounced-processing" class="table-of-contents__link toc-highlight">Debounced Processing</a></li></ul></li><li><a href="#autoplay--continuous-playback" class="table-of-contents__link toc-highlight">Autoplay &amp; Continuous Playback</a><ul><li><a href="#smart-queue-extension" class="table-of-contents__link toc-highlight">Smart Queue Extension</a></li></ul></li><li><a href="#voice-search-playback" class="table-of-contents__link toc-highlight">Voice Search Playback</a><ul><li><a href="#speak-to-play" class="table-of-contents__link toc-highlight">Speak to Play</a></li></ul></li><li><a href="#self-healing-playback" class="table-of-contents__link toc-highlight">Self-Healing Playback</a><ul><li><a href="#automatic-error-recovery" class="table-of-contents__link toc-highlight">Automatic Error Recovery</a></li><li><a href="#download-deletion-handling" class="table-of-contents__link toc-highlight">Download Deletion Handling</a></li></ul></li><li><a href="#rolling-cache-system" class="table-of-contents__link toc-highlight">Rolling Cache System</a><ul><li><a href="#smart-download-window" class="table-of-contents__link toc-highlight">Smart Download Window</a></li></ul></li><li><a href="#proactive-caching" class="table-of-contents__link toc-highlight">Proactive Caching</a><ul><li><a href="#predictive-downloads" class="table-of-contents__link toc-highlight">Predictive Downloads</a></li></ul></li><li><a href="#integration-with-audio-engine" class="table-of-contents__link toc-highlight">Integration with Audio Engine</a><ul><li><a href="#clean-separation-of-concerns" class="table-of-contents__link toc-highlight">Clean Separation of Concerns</a></li><li><a href="#communication-flow" class="table-of-contents__link toc-highlight">Communication Flow</a></li><li><a href="#synchronisation" class="table-of-contents__link toc-highlight">synchronisation</a></li></ul></li><li><a href="#error-handling" class="table-of-contents__link toc-highlight">Error Handling</a><ul><li><a href="#loading-errors" class="table-of-contents__link toc-highlight">Loading Errors</a></li><li><a href="#playback-errors" class="table-of-contents__link toc-highlight">Playback Errors</a></li></ul></li><li><a href="#technical-specifications" class="table-of-contents__link toc-highlight">Technical Specifications</a></li><li><a href="#related-documentation" class="table-of-contents__link toc-highlight">Related Documentation</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Product</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/home#features">Features</a></li><li class="footer__item"><a class="footer__link-item" href="/home#compare">Compare</a></li><li class="footer__item"><a class="footer__link-item" href="/download">Download</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/audio-engine/USER-audio-engine">Audio Engine</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/downloads/USER-downloads">Offline &amp; Downloads</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/dj-mode/USER-dj-mode">DJ Mode</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Legal</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/privacy-policy">Privacy Policy</a></li><li class="footer__item"><a class="footer__link-item" href="/terms-of-service">Terms of Service</a></li><li class="footer__item"><a class="footer__link-item" href="/eula">EULA</a></li><li class="footer__item"><a class="footer__link-item" href="/security">Security</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Llamafin. All rights reserved. Llamafin is not affiliated with Jellyfin, Plex, Spotify, Apple, or Google.</div></div></div></footer></div>
+</body>
+</html>

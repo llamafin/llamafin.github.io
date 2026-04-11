@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-pipes-directives/USER-pipes-directives" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Pipes &amp; Directives | Llamafin</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://llamafin.app/img/llamafin-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://llamafin.app/img/llamafin-social-card.jpg"><meta data-rh="true" property="og:url" content="https://llamafin.app/docs/pipes-directives/USER-pipes-directives"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Pipes &amp; Directives | Llamafin"><meta data-rh="true" name="description" content="Audience: End users, system administrators, technical stakeholders"><meta data-rh="true" property="og:description" content="Audience: End users, system administrators, technical stakeholders"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://llamafin.app/docs/pipes-directives/USER-pipes-directives"><link data-rh="true" rel="alternate" href="https://llamafin.app/docs/pipes-directives/USER-pipes-directives" hreflang="en"><link data-rh="true" rel="alternate" href="https://llamafin.app/docs/pipes-directives/USER-pipes-directives" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.dfcef6b7.css">
+<script src="/assets/js/runtime~main.97087c45.js" defer="defer"></script>
+<script src="/assets/js/main.5ba81d92.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>document.documentElement.setAttribute("data-theme","dark"),document.documentElement.setAttribute("data-theme-choice","dark"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/icons/android-chrome-192x192.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/icons/android-chrome-192x192.png" alt="Llamafin Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/icons/android-chrome-192x192.png" alt="Llamafin Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Llamafin</b></a><a class="navbar__item navbar__link" href="/docs/getting-started/">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><a class="navbar__item navbar__link navbar-download-btn" href="/download">Get the App</a></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Pipes &amp; Directives</h1></header>
+<blockquote>
+<p><strong>Audience</strong>: End users, system administrators, technical stakeholders
+<strong>Last Updated</strong>: 2026-04-06
+<strong>Version</strong>: 2.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="table-of-contents">Table of Contents<a href="#table-of-contents" class="hash-link" aria-label="Direct link to Table of Contents" title="Direct link to Table of Contents" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#overview" class="">Overview</a></li>
+<li class=""><a href="#data-formatting-pipes" class="">Data Formatting Pipes</a></li>
+<li class=""><a href="#interactive-directives" class="">Interactive Directives</a></li>
+<li class=""><a href="#how-they-work" class="">How They Work</a></li>
+<li class=""><a href="#technical-specifications" class="">Technical Specifications</a></li>
+<li class=""><a href="#related-documentation" class="">Related Documentation</a></li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>Pipes and directives are Angular&#x27;s building blocks for transforming data and adding interactive behaviors to HTML elements. Llamafin includes 8 data formatting pipes and 6 interactive directives that work behind the scenes to present your data cleanly and add rich interactions throughout the app.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-are-pipes">What Are Pipes?<a href="#what-are-pipes" class="hash-link" aria-label="Direct link to What Are Pipes?" title="Direct link to What Are Pipes?" translate="no">​</a></h3>
+<p>Pipes transform data for display. They take an input value, process it, and return a formatted output. Think of them as small utility functions that run automatically whenever the data they&#x27;re applied to changes.</p>
+<p><strong>Example</strong>: A raw file size value of <code>1572864</code> bytes becomes <code>&quot;1.5 MiB&quot;</code> when passed through the <code>bytes</code> pipe.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-are-directives">What Are Directives?<a href="#what-are-directives" class="hash-link" aria-label="Direct link to What Are Directives?" title="Direct link to What Are Directives?" translate="no">​</a></h3>
+<p>Directives add behaviors or animations to HTML elements. They listen for events, manipulate the DOM, or animate values over time.</p>
+<p><strong>Example</strong>: The <code>long-press</code> directive distinguishes between a quick tap (play a song) and a long press (open the context menu).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary" translate="no">​</a></h3>
+<table><thead><tr><th>Category</th><th>Count</th><th>What They Do</th></tr></thead><tbody><tr><td><strong>Formatting Pipes</strong></td><td>8</td><td>Convert raw data into human-readable formats (time, file size, numbers, images)</td></tr><tr><td><strong>Interactive Directives</strong></td><td>6</td><td>Add animations, gestures, and custom scrollbar styling</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-formatting-pipes">Data Formatting Pipes<a href="#data-formatting-pipes" class="hash-link" aria-label="Direct link to Data Formatting Pipes" title="Direct link to Data Formatting Pipes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bytes-pipe-bytes">Bytes Pipe (<code>bytes</code>)<a href="#bytes-pipe-bytes" class="hash-link" aria-label="Direct link to bytes-pipe-bytes" title="Direct link to bytes-pipe-bytes" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Converts raw byte counts into human-readable file sizes using binary units.</p>
+<table><thead><tr><th>Input</th><th>Output</th></tr></thead><tbody><tr><td><code>0</code></td><td><code>0 Bytes</code></td></tr><tr><td><code>1024</code></td><td><code>1 KiB</code></td></tr><tr><td><code>1572864</code></td><td><code>1.5 MiB</code></td></tr><tr><td><code>1073741824</code></td><td><code>1 GiB</code></td></tr><tr><td><code>1099511627776</code></td><td><code>1 TiB</code></td></tr></tbody></table>
+<p><strong>Where You See It</strong>:</p>
+<ul>
+<li class="">Download sizes and disk space usage on the Downloads page</li>
+<li class="">Cache sizes in Settings → Advanced → Caching</li>
+<li class="">Debug overlays showing memory and disk usage</li>
+</ul>
+<p><strong>Units</strong>: Bytes, KiB, MiB, GiB, TiB, PiB, EiB, ZiB, YiB (binary base-1024 units)</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ticks-to-time-string-pipe-tickstotimestring">Ticks To Time String Pipe (<code>ticksToTimeString</code>)<a href="#ticks-to-time-string-pipe-tickstotimestring" class="hash-link" aria-label="Direct link to ticks-to-time-string-pipe-tickstotimestring" title="Direct link to ticks-to-time-string-pipe-tickstotimestring" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Converts Jellyfin&#x27;s internal time format (&quot;ticks&quot; — 100-nanosecond units) into compact, human-readable time durations.</p>
+<table><thead><tr><th>Input (Ticks)</th><th>Output</th><th>Meaning</th></tr></thead><tbody><tr><td><code>0</code></td><td><code>0s</code></td><td>Zero duration</td></tr><tr><td><code>450000000</code></td><td><code>45s</code></td><td>45 seconds</td></tr><tr><td><code>1800000000</code></td><td><code>30m</code></td><td>30 minutes</td></tr><tr><td><code>1845000000</code></td><td><code>30m 45s</code></td><td>30 minutes, 45 seconds</td></tr><tr><td><code>93600000000</code></td><td><code>1d 2h</code></td><td>1 day, 2 hours</td></tr></tbody></table>
+<p><strong>Where You See It</strong>:</p>
+<ul>
+<li class="">Track durations next to every song in your library (most common usage — 20 instances across the app)</li>
+<li class="">Total runtime on album, artist, and playlist detail pages</li>
+<li class="">Download statistics showing total listening time</li>
+</ul>
+<p><strong>Format</strong>: Shows only the two largest units (e.g., &quot;1d 2h&quot; instead of &quot;1d 2h 30m 45s&quot;) for compactness. Unit labels are translated into your selected language.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="truncate-pipe-truncate">Truncate Pipe (<code>truncate</code>)<a href="#truncate-pipe-truncate" class="hash-link" aria-label="Direct link to truncate-pipe-truncate" title="Direct link to truncate-pipe-truncate" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Shortens long text to a specified character limit and appends &quot;...&quot; if truncated.</p>
+<table><thead><tr><th>Input</th><th>Limit</th><th>Output</th></tr></thead><tbody><tr><td><code>&quot;Very Long Song Title Here&quot;</code></td><td>15</td><td><code>&quot;Very Long Song...&quot;</code></td></tr><tr><td><code>&quot;John Doe&quot;</code></td><td>12</td><td><code>&quot;John Doe&quot;</code> (no truncation needed)</td></tr></tbody></table>
+<p><strong>Where You See It</strong>:</p>
+<ul>
+<li class="">User names in login and switch-user modals (truncated to 12 characters)</li>
+<li class="">Movie/album descriptions on the home page (truncated to 160 characters)</li>
+<li class="">Playlist names in the &quot;Add to Playlist&quot; dialogue (truncated to 20 characters)</li>
+<li class="">Audio output names in playback settings (truncated to 15 characters)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="image-url-pipe-imageurl">Image URL Pipe (<code>imageUrl</code>)<a href="#image-url-pipe-imageurl" class="hash-link" aria-label="Direct link to image-url-pipe-imageurl" title="Direct link to image-url-pipe-imageurl" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Resolves album artwork and images with a comprehensive fallback chain that works both online and offline.</p>
+<p><strong>Resolution Chain</strong>:</p>
+<ol>
+<li class=""><strong>Local File</strong>: If the item is downloaded, loads from the local file system</li>
+<li class=""><strong>Remote Server</strong>: If online, builds the Jellyfin image URL with your quality settings</li>
+<li class=""><strong>Fallback SVG</strong>: If no image is available, generates an SVG placeholder with the item&#x27;s initials</li>
+</ol>
+<p><strong>Where You See It</strong>:</p>
+<ul>
+<li class="">Album artwork on all library detail pages (album, artist, genre, playlist)</li>
+<li class="">Download page headers</li>
+<li class="">Sonic Twins and Sonic Hero pages</li>
+</ul>
+<p><strong>Smart Features</strong>:</p>
+<ul>
+<li class="">Works offline by loading cached local files</li>
+<li class="">Adapts image quality based on your appearance settings</li>
+<li class="">Handles platform differences (iOS/Android vs web/desktop)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="short-number-pipe-shortnumber">Short Number Pipe (<code>shortNumber</code>)<a href="#short-number-pipe-shortnumber" class="hash-link" aria-label="Direct link to short-number-pipe-shortnumber" title="Direct link to short-number-pipe-shortnumber" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Formats large numbers using bit-rate suffixes for compact display.</p>
+<table><thead><tr><th>Input</th><th>Output</th></tr></thead><tbody><tr><td><code>1500</code></td><td><code>1.5Kbit</code></td></tr><tr><td><code>1500000</code></td><td><code>1.5Mbit</code></td></tr><tr><td><code>1500000000</code></td><td><code>1.5Gbit</code></td></tr></tbody></table>
+<p><strong>Where You See It</strong>:</p>
+<ul>
+<li class="">Audio bitrate display in the full player&#x27;s playback controls</li>
+</ul>
+<p><strong>Note</strong>: Despite the generic name, this pipe is specialized for bit-rate display (using base-10 units), not general number abbreviation.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safe-html-pipe-safehtml">Safe HTML Pipe (<code>safeHtml</code>)<a href="#safe-html-pipe-safehtml" class="hash-link" aria-label="Direct link to safe-html-pipe-safehtml" title="Direct link to safe-html-pipe-safehtml" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Safely renders HTML content that would otherwise be escaped by Angular&#x27;s built-in security sanitization.</p>
+<p><strong>Where You See It</strong>:</p>
+<ul>
+<li class="">Song names in the Sonic Twins page (where names may contain HTML formatting)</li>
+</ul>
+<p><strong>Security</strong>: Uses Angular&#x27;s <code>DomSanitizer</code> to mark content as trusted, ensuring only intentional HTML is rendered.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-media-blob-pipe-localmediablob">Local Media Blob Pipe (<code>localMediaBlob</code>)<a href="#local-media-blob-pipe-localmediablob" class="hash-link" aria-label="Direct link to local-media-blob-pipe-localmediablob" title="Direct link to local-media-blob-pipe-localmediablob" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Fetches local media assets (like preview images) as binary blobs and converts them to displayable URLs.</p>
+<p><strong>Where You See It</strong>:</p>
+<ul>
+<li class="">Visualizer preview thumbnails in the &quot;Select Visualizer&quot; modal</li>
+<li class="">Spinner animation previews in the &quot;Select Spinner&quot; modal</li>
+</ul>
+<p><strong>How It Works</strong>: Downloads the asset once, caches it in memory, and reuses the cached version for subsequent requests — preventing duplicate network calls.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="number-to-array-pipe-numbertoarray">Number To Array Pipe (<code>numberToArray</code>)<a href="#number-to-array-pipe-numbertoarray" class="hash-link" aria-label="Direct link to number-to-array-pipe-numbertoarray" title="Direct link to number-to-array-pipe-numbertoarray" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Converts a number into an array of sequential indices <code>[0, 1, 2, ..., n-1]</code>. This is a technical helper used internally by the custom swiper carousel component.</p>
+<p><strong>Where You See It</strong>:</p>
+<ul>
+<li class="">Swiper pagination dots generation (internal component)</li>
+</ul>
+<p><strong>User Impact</strong>: You don&#x27;t see this pipe directly, but it powers the pagination dots you see when swiping through carousel slides.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="interactive-directives">Interactive Directives<a href="#interactive-directives" class="hash-link" aria-label="Direct link to Interactive Directives" title="Direct link to Interactive Directives" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-scrollbar-directive-appcustomscrollbar">Custom Scrollbar Directive (<code>appCustomScrollbar</code>)<a href="#custom-scrollbar-directive-appcustomscrollbar" class="hash-link" aria-label="Direct link to custom-scrollbar-directive-appcustomscrollbar" title="Direct link to custom-scrollbar-directive-appcustomscrollbar" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Replaces the browser&#x27;s default scrollbar with a custom-styled scrollbar that matches the app&#x27;s theme.</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li class=""><strong>Dynamic Colour</strong>: Automatically uses the dominant colour extracted from the current album artwork</li>
+<li class=""><strong>Auto-Hide</strong>: Shows when you start scrolling, fades out after 1 second of inactivity</li>
+<li class=""><strong>Gap Removal</strong>: Eliminates the padding gap that Ionic normally adds on the right side of scrollable content</li>
+</ul>
+<p><strong>Where You See It</strong>: On virtually every scrollable page in the app (111+ instances) — library pages, settings, modals, and player pages.</p>
+<p><strong>How It Works</strong>: The directive injects custom CSS into Ionic&#x27;s shadow DOM and listens for scroll events to show/hide the scrollbar dynamically. When your accent colour setting changes, the scrollbar colour updates in real-time.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="animated-number-directive-animatednumber">Animated Number Directive (<code>animatedNumber</code>)<a href="#animated-number-directive-animatednumber" class="hash-link" aria-label="Direct link to animated-number-directive-animatednumber" title="Direct link to animated-number-directive-animatednumber" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Smoothly animates numeric transitions from the current displayed value to a new target value using a quadratic ease-out curve (fast start, slow end).</p>
+<p><strong>Where You See It</strong>:</p>
+<ul>
+<li class=""><strong>Downloads Page</strong>: Animates total tracks, disk space, and runtime statistics when the page loads</li>
+<li class=""><strong>Page Headers</strong>: Animates the item range display (e.g., &quot;1–25 of 150&quot;) when pagination changes</li>
+<li class=""><strong>Audio Items</strong>: Animates download progress indicators</li>
+<li class=""><strong>Scheduler Page</strong>: Animates job progress percentages</li>
+</ul>
+<p><strong>Animation Details</strong>:</p>
+<ul>
+<li class="">Default duration: 1 second (1000ms)</li>
+<li class="">Easing: Quadratic ease-out (<code>x * (2 - x)</code>) — starts fast, slows down as it approaches the target</li>
+<li class="">Frame rate: 60fps (uses <code>requestAnimationFrame</code>)</li>
+<li class=""><strong>Stateful</strong>: Remembers the last displayed value, so if a number changes mid-animation, it smoothly transitions from the current position rather than jumping</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="long-press-directive-long-press">Long Press Directive (<code>long-press</code>)<a href="#long-press-directive-long-press" class="hash-link" aria-label="Direct link to long-press-directive-long-press" title="Direct link to long-press-directive-long-press" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Distinguishes between a quick tap and a long press on touch devices.</p>
+<p><strong>Behaviour</strong>:</p>
+<ul>
+<li class=""><strong>Quick Tap</strong> (release within 300ms, finger moved &lt; 15px): Emits a &quot;tap&quot; event</li>
+<li class=""><strong>Long Press</strong> (hold for 300ms without moving finger more than 15px): Emits a &quot;press&quot; event</li>
+<li class=""><strong>Drag</strong> (move finger more than 15px): No event emitted (prevents accidental triggers)</li>
+</ul>
+<p><strong>Where You See It</strong>: On every media item (song, album, artist, playlist) in your library views:</p>
+<ul>
+<li class=""><strong>Tap</strong>: Plays the item</li>
+<li class=""><strong>Long Press</strong>: Opens the context menu with 25+ actions (play, shuffle, add to queue, download, share, etc.)</li>
+</ul>
+<p><strong>How It Works</strong>: Uses Ionic&#x27;s GestureController for accurate touch tracking, including position monitoring to distinguish between a deliberate hold and an accidental drag.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="right-click-directive-rightclick">Right Click Directive (<code>rightClick</code>)<a href="#right-click-directive-rightclick" class="hash-link" aria-label="Direct link to right-click-directive-rightclick" title="Direct link to right-click-directive-rightclick" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Captures right-click (context menu) events on desktop and prevents the browser&#x27;s default context menu from appearing.</p>
+<p><strong>Where You See It</strong>: On every media item in library views (co-located with the <code>long-press</code> directive) — provides desktop parity to the long-press gesture on mobile.</p>
+<p><strong>Behaviour</strong>:</p>
+<ul>
+<li class="">Right-click on a song/album/artist → Opens the same context menu as long-press on mobile</li>
+<li class="">Prevents the browser&#x27;s default right-click menu from appearing</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="count-up-directive-countup">Count Up Directive (<code>countUp</code>)<a href="#count-up-directive-countup" class="hash-link" aria-label="Direct link to count-up-directive-countup" title="Direct link to count-up-directive-countup" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Animates counting from 0 to a target number using a quadratic ease-out curve.</p>
+<p><strong>Status</strong>: <strong>Currently unused</strong> in the app. Declared and available for future use.</p>
+<p><strong>How It Would Work</strong>: If applied to an element, it would count up from 0 to the target value over 2 seconds (default), updating the element&#x27;s text content.</p>
+<p><strong>Difference from <code>animatedNumber</code></strong>: <code>countUp</code> always starts from 0 and directly sets the element&#x27;s text content. <code>animatedNumber</code> is stateful (remembers the last value) and emits intermediate values for other components to use.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="swiper-gesture-directive-appswipergesture">Swiper Gesture Directive (<code>appSwiperGesture</code>)<a href="#swiper-gesture-directive-appswipergesture" class="hash-link" aria-label="Direct link to swiper-gesture-directive-appswipergesture" title="Direct link to swiper-gesture-directive-appswipergesture" translate="no">​</a></h3>
+<p><strong>What It Does</strong>: Provides touch and mouse drag gesture recognition for the custom swiper carousel component.</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li class=""><strong>Touch Support</strong>: Works with finger gestures on mobile devices</li>
+<li class=""><strong>Mouse Support</strong>: Works with click-and-drag on desktop</li>
+<li class=""><strong>Swipe Detection</strong>: Recognises left and right swipes based on velocity (&gt; 0.2 pixels/ms) and distance (&gt; 30 pixels)</li>
+<li class=""><strong>Scroll Prevention</strong>: Prevents page scrolling during horizontal swipes</li>
+<li class=""><strong>Performance</strong>: Runs outside Angular&#x27;s change detection zone to avoid unnecessary re-renders</li>
+</ul>
+<p><strong>Where You See It</strong>: Internally within the custom swiper carousel component (used for the full player&#x27;s 3-page swipe carousel: Cover → Visualiser → Lyrics)</p>
+<p><strong>Outputs</strong>: Emits <code>gestureStart</code>, <code>gestureMove</code>, <code>gestureEnd</code>, <code>swipeLeft</code>, and <code>swipeRight</code> events that the swiper container responds to.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-they-work">How They Work<a href="#how-they-work" class="hash-link" aria-label="Direct link to How They Work" title="Direct link to How They Work" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pipe-execution-flow">Pipe Execution Flow<a href="#pipe-execution-flow" class="hash-link" aria-label="Direct link to Pipe Execution Flow" title="Direct link to Pipe Execution Flow" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Raw Data (from API or store)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  │</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ▼</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Pipe Transform Function</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  │</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ├── bytes:         1572864 → &quot;1.5 MiB&quot;</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ├── ticksToTime:   1845000000 → &quot;30m 45s&quot;</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ├── truncate:      &quot;Very Long Text&quot; → &quot;Very Lon...&quot;</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  └── imageUrl:      Album DTO → &quot;https://server/Items/123/Images/Primary&quot;</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  │</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ▼</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Template Rendering (displayed to user)</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="directive-execution-flow">Directive Execution Flow<a href="#directive-execution-flow" class="hash-link" aria-label="Direct link to Directive Execution Flow" title="Direct link to Directive Execution Flow" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">User Interaction (touch, mouse, scroll)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  │</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ▼</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Directive Event Listener</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  │</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ├── long-press:   Distinguishes tap vs hold</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ├── rightClick:   Captures right-click, prevents default</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ├── animatedNumber: Animates value change over time</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  └── customScrollbar: Shows/hides scrollbar on scroll activity</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  │</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ▼</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Event Emission (Output)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  │</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  ▼</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Component Reaction (open menu, update display, etc.)</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-specifications">Technical Specifications<a href="#technical-specifications" class="hash-link" aria-label="Direct link to Technical Specifications" title="Direct link to Technical Specifications" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pipes">Pipes<a href="#pipes" class="hash-link" aria-label="Direct link to Pipes" title="Direct link to Pipes" translate="no">​</a></h3>
+<table><thead><tr><th>Pipe</th><th>Type</th><th>Injects Services</th><th>Returns Observable</th><th>Usage Count</th></tr></thead><tbody><tr><td><code>bytes</code></td><td>Pure</td><td>No</td><td>No</td><td>12</td></tr><tr><td><code>ticksToTimeString</code></td><td>Pure</td><td>TranslateService</td><td>No</td><td>20 (highest)</td></tr><tr><td><code>truncate</code></td><td>Pure</td><td>No</td><td>No</td><td>7</td></tr><tr><td><code>imageUrl</code></td><td>Pure</td><td>5 services</td><td>Yes (<code>Observable&lt;string&gt;</code>)</td><td>17</td></tr><tr><td><code>shortNumber</code></td><td>Pure</td><td>No</td><td>No</td><td>1</td></tr><tr><td><code>safeHtml</code></td><td>Pure</td><td>DomSanitizer</td><td>No</td><td>1</td></tr><tr><td><code>localMediaBlob</code></td><td>Pure</td><td>3 services</td><td>Yes (<code>Observable&lt;SafeUrl&gt;</code>)</td><td>2</td></tr><tr><td><code>numberToArray</code></td><td>Pure</td><td>No</td><td>No</td><td>1</td></tr></tbody></table>
+<p><strong>All pipes are pure and standalone.</strong> Pure pipes only re-execute when their input value changes (by reference), ensuring efficient rendering.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="directives">Directives<a href="#directives" class="hash-link" aria-label="Direct link to Directives" title="Direct link to Directives" translate="no">​</a></h3>
+<table><thead><tr><th>Directive</th><th>Selector</th><th>Uses RxJS</th><th>Uses Ionic Gestures</th><th>Usage Count</th></tr></thead><tbody><tr><td><code>appCustomScrollbar</code></td><td><code>[appCustomScrollbar]</code></td><td>No</td><td>No</td><td>111+ (highest)</td></tr><tr><td><code>animatedNumber</code></td><td><code>[animatedNumber]</code></td><td>Yes</td><td>No</td><td>11</td></tr><tr><td><code>long-press</code></td><td><code>[long-press]</code></td><td>No</td><td>Yes</td><td>7</td></tr><tr><td><code>rightClick</code></td><td><code>[rightClick]</code></td><td>Yes</td><td>No</td><td>7</td></tr><tr><td><code>appSwiperGesture</code></td><td><code>[appSwiperGesture]</code></td><td>No</td><td>No</td><td>1</td></tr><tr><td><code>countUp</code></td><td><code>[countUp]</code></td><td>Yes</td><td>No</td><td>0 (unused)</td></tr></tbody></table>
+<p><strong>All directives are standalone.</strong> They can be applied to any element without module configuration.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="animation-specifications">Animation Specifications<a href="#animation-specifications" class="hash-link" aria-label="Direct link to Animation Specifications" title="Direct link to Animation Specifications" translate="no">​</a></h3>
+<table><thead><tr><th>Animation</th><th>Easing</th><th>Duration</th><th>Frame Rate</th><th>Used By</th></tr></thead><tbody><tr><td>Count Up</td><td>Quadratic ease-out</td><td>2 seconds (default)</td><td>60fps</td><td>CountUpDirective (unused)</td></tr><tr><td>Animated Number</td><td>Quadratic ease-out</td><td>1 second (default)</td><td>60fps</td><td>AnimatedNumberDirective</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gesture-specifications">Gesture Specifications<a href="#gesture-specifications" class="hash-link" aria-label="Direct link to Gesture Specifications" title="Direct link to Gesture Specifications" translate="no">​</a></h3>
+<table><thead><tr><th>Gesture</th><th>Trigger</th><th>Threshold</th><th>Output</th><th>Used By</th></tr></thead><tbody><tr><td>Tap</td><td>Touch release within 300ms, movement &lt; 15px</td><td>300ms, 15px</td><td><code>tap</code> event</td><td>LongPressDirective</td></tr><tr><td>Long Press</td><td>Touch hold for 300ms, movement &lt; 15px</td><td>300ms, 15px</td><td><code>press</code> event</td><td>LongPressDirective</td></tr><tr><td>Right Click</td><td>Mouse right button down</td><td>N/A</td><td><code>rightClick</code> event</td><td>RightClickDirective</td></tr><tr><td>Swipe Left/Right</td><td>Drag with velocity &gt; 0.2 px/ms and distance &gt; 30px</td><td>0.2 px/ms, 30px</td><td><code>swipeLeft/Right</code> event</td><td>SwiperGestureDirective</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="related-documentation">Related Documentation<a href="#related-documentation" class="hash-link" aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation" translate="no">​</a></h2>
+<ul>
+<li class=""><strong><a class="" href="/docs/shared-components/USER-shared-components">Shared Components</a></strong> - Components that use these pipes and directives</li>
+<li class=""><strong><a class="" href="/docs/internationalization/USER-internationalization">Internationalization</a></strong> - How TicksToTimeStringPipe uses translation services</li>
+<li class=""><strong><a class="" href="/docs/ui-components/USER-ui-components">UI Components</a></strong> - Modal system where truncate and bytes pipes are used</li>
+<li class=""><strong><a class="" href="/docs/player/USER-player">Player &amp; Queue</a></strong> - Playback controls that use the shortNumber pipe for bitrate display</li>
+<li class=""><strong><a class="" href="/docs/library/USER-library">Library Management</a></strong> - Library pages that heavily use imageUrl and ticksToTimeString pipes</li>
+</ul>
+<hr>
+<p><em>Last Updated: 2026-04-06</em>
+<em>Version: 2.0.0</em></p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#table-of-contents" class="table-of-contents__link toc-highlight">Table of Contents</a></li><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a><ul><li><a href="#what-are-pipes" class="table-of-contents__link toc-highlight">What Are Pipes?</a></li><li><a href="#what-are-directives" class="table-of-contents__link toc-highlight">What Are Directives?</a></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a></li></ul></li><li><a href="#data-formatting-pipes" class="table-of-contents__link toc-highlight">Data Formatting Pipes</a><ul><li><a href="#bytes-pipe-bytes" class="table-of-contents__link toc-highlight">Bytes Pipe (<code>bytes</code>)</a></li><li><a href="#ticks-to-time-string-pipe-tickstotimestring" class="table-of-contents__link toc-highlight">Ticks To Time String Pipe (<code>ticksToTimeString</code>)</a></li><li><a href="#truncate-pipe-truncate" class="table-of-contents__link toc-highlight">Truncate Pipe (<code>truncate</code>)</a></li><li><a href="#image-url-pipe-imageurl" class="table-of-contents__link toc-highlight">Image URL Pipe (<code>imageUrl</code>)</a></li><li><a href="#short-number-pipe-shortnumber" class="table-of-contents__link toc-highlight">Short Number Pipe (<code>shortNumber</code>)</a></li><li><a href="#safe-html-pipe-safehtml" class="table-of-contents__link toc-highlight">Safe HTML Pipe (<code>safeHtml</code>)</a></li><li><a href="#local-media-blob-pipe-localmediablob" class="table-of-contents__link toc-highlight">Local Media Blob Pipe (<code>localMediaBlob</code>)</a></li><li><a href="#number-to-array-pipe-numbertoarray" class="table-of-contents__link toc-highlight">Number To Array Pipe (<code>numberToArray</code>)</a></li></ul></li><li><a href="#interactive-directives" class="table-of-contents__link toc-highlight">Interactive Directives</a><ul><li><a href="#custom-scrollbar-directive-appcustomscrollbar" class="table-of-contents__link toc-highlight">Custom Scrollbar Directive (<code>appCustomScrollbar</code>)</a></li><li><a href="#animated-number-directive-animatednumber" class="table-of-contents__link toc-highlight">Animated Number Directive (<code>animatedNumber</code>)</a></li><li><a href="#long-press-directive-long-press" class="table-of-contents__link toc-highlight">Long Press Directive (<code>long-press</code>)</a></li><li><a href="#right-click-directive-rightclick" class="table-of-contents__link toc-highlight">Right Click Directive (<code>rightClick</code>)</a></li><li><a href="#count-up-directive-countup" class="table-of-contents__link toc-highlight">Count Up Directive (<code>countUp</code>)</a></li><li><a href="#swiper-gesture-directive-appswipergesture" class="table-of-contents__link toc-highlight">Swiper Gesture Directive (<code>appSwiperGesture</code>)</a></li></ul></li><li><a href="#how-they-work" class="table-of-contents__link toc-highlight">How They Work</a><ul><li><a href="#pipe-execution-flow" class="table-of-contents__link toc-highlight">Pipe Execution Flow</a></li><li><a href="#directive-execution-flow" class="table-of-contents__link toc-highlight">Directive Execution Flow</a></li></ul></li><li><a href="#technical-specifications" class="table-of-contents__link toc-highlight">Technical Specifications</a><ul><li><a href="#pipes" class="table-of-contents__link toc-highlight">Pipes</a></li><li><a href="#directives" class="table-of-contents__link toc-highlight">Directives</a></li><li><a href="#animation-specifications" class="table-of-contents__link toc-highlight">Animation Specifications</a></li><li><a href="#gesture-specifications" class="table-of-contents__link toc-highlight">Gesture Specifications</a></li></ul></li><li><a href="#related-documentation" class="table-of-contents__link toc-highlight">Related Documentation</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Product</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/home#features">Features</a></li><li class="footer__item"><a class="footer__link-item" href="/home#compare">Compare</a></li><li class="footer__item"><a class="footer__link-item" href="/download">Download</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/audio-engine/USER-audio-engine">Audio Engine</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/downloads/USER-downloads">Offline &amp; Downloads</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/dj-mode/USER-dj-mode">DJ Mode</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Legal</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/privacy-policy">Privacy Policy</a></li><li class="footer__item"><a class="footer__link-item" href="/terms-of-service">Terms of Service</a></li><li class="footer__item"><a class="footer__link-item" href="/eula">EULA</a></li><li class="footer__item"><a class="footer__link-item" href="/security">Security</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Llamafin. All rights reserved. Llamafin is not affiliated with Jellyfin, Plex, Spotify, Apple, or Google.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-offline-support/USER-offline-support" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Offline Support | Llamafin</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://llamafin.app/img/llamafin-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://llamafin.app/img/llamafin-social-card.jpg"><meta data-rh="true" property="og:url" content="https://llamafin.app/docs/offline-support/USER-offline-support"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Offline Support | Llamafin"><meta data-rh="true" name="description" content="Audience: End users and technical evaluators"><meta data-rh="true" property="og:description" content="Audience: End users and technical evaluators"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://llamafin.app/docs/offline-support/USER-offline-support"><link data-rh="true" rel="alternate" href="https://llamafin.app/docs/offline-support/USER-offline-support" hreflang="en"><link data-rh="true" rel="alternate" href="https://llamafin.app/docs/offline-support/USER-offline-support" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Offline Support","item":"https://llamafin.app/docs/offline-support/USER-offline-support"}]}</script><link rel="stylesheet" href="/assets/css/styles.dfcef6b7.css">
+<script src="/assets/js/runtime~main.97087c45.js" defer="defer"></script>
+<script src="/assets/js/main.5ba81d92.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>document.documentElement.setAttribute("data-theme","dark"),document.documentElement.setAttribute("data-theme-choice","dark"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/icons/android-chrome-192x192.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/icons/android-chrome-192x192.png" alt="Llamafin Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/icons/android-chrome-192x192.png" alt="Llamafin Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Llamafin</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/getting-started/">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><a class="navbar__item navbar__link navbar-download-btn" href="/download">Get the App</a></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/getting-started/"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/getting-started/"><span title="Getting Started with Llamafin" class="linkLabel_WmDU">Getting Started with Llamafin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/architecture/USER-architecture"><span title="Llamafin Architecture &amp; Technology" class="linkLabel_WmDU">Llamafin Architecture &amp; Technology</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/authentication/USER-authentication"><span title="Authentication &amp; User Security" class="linkLabel_WmDU">Authentication &amp; User Security</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/audio-engine/USER-audio-engine"><span title="Audio &amp; Playback" class="categoryLinkLabel_W154">Audio &amp; Playback</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/library/USER-library"><span title="Music Library &amp; Discovery" class="categoryLinkLabel_W154">Music Library &amp; Discovery</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/downloads/USER-downloads"><span title="Offline &amp; Downloads" class="categoryLinkLabel_W154">Offline &amp; Downloads</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/downloads/USER-downloads"><span title="Offline Downloads &amp; Storage Management" class="linkLabel_WmDU">Offline Downloads &amp; Storage Management</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/offline-support/USER-offline-support"><span title="Offline Support" class="linkLabel_WmDU">Offline Support</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/connect-p2p/USER-connect-p2p"><span title="Connectivity &amp; Remote Control" class="categoryLinkLabel_W154">Connectivity &amp; Remote Control</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/settings/USER-settings"><span title="Settings &amp; Customisation" class="categoryLinkLabel_W154">Settings &amp; Customisation</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/ui-components/USER-ui-components"><span title="UI &amp; Experience" class="categoryLinkLabel_W154">UI &amp; Experience</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/internationalization/USER-internationalization"><span title="Advanced Features" class="categoryLinkLabel_W154">Advanced Features</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/security/USER-security"><span title="Security &amp; Technical" class="categoryLinkLabel_W154">Security &amp; Technical</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/platform-support/USER-platform-support"><span title="Platform &amp; Deployment" class="categoryLinkLabel_W154">Platform &amp; Deployment</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Offline &amp; Downloads</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Offline Support</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Offline Support</h1></header>
+<blockquote>
+<p><strong>Audience</strong>: End users and technical evaluators
+<strong>Last Updated</strong>: 2026-04-05
+<strong>Version</strong>: 2.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>Llamafin works fully offline — no internet connection required. Your downloaded music, library browsing, search, and playback all function without network connectivity. When you reconnect, everything syncs automatically.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-concepts">Key Concepts<a href="#key-concepts" class="hash-link" aria-label="Direct link to Key Concepts" title="Direct link to Key Concepts" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="three-pillars-of-offline-support">Three Pillars of Offline Support<a href="#three-pillars-of-offline-support" class="hash-link" aria-label="Direct link to Three Pillars of Offline Support" title="Direct link to Three Pillars of Offline Support" translate="no">​</a></h3>
+<p><strong>1. Network Status Detection</strong></p>
+<ul>
+<li class="">Monitors your device&#x27;s internet connection</li>
+<li class="">Tracks WebSocket connection to your Jellyfin server</li>
+<li class="">Detects WiFi vs cellular connectivity</li>
+<li class="">Measures network speed automatically</li>
+</ul>
+<p><strong>2. Storage &amp; Persistence</strong></p>
+<ul>
+<li class="">Saves your settings and preferences locally</li>
+<li class="">Stores downloaded music files securely</li>
+<li class="">Queues operations that can&#x27;t complete until storage is ready</li>
+<li class="">Uses IndexedDB for reliable browser-based storage</li>
+</ul>
+<p><strong>3. Downloads &amp; Caching</strong></p>
+<ul>
+<li class="">Downloads: User-initiated permanent local copies of your music</li>
+<li class="">Caching: Automatic background caching of tracks you&#x27;re about to play</li>
+<li class="">Both enable offline playback but serve different purposes</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="force-offline-mode">Force Offline Mode<a href="#force-offline-mode" class="hash-link" aria-label="Direct link to Force Offline Mode" title="Direct link to Force Offline Mode" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-force-offline-mode">What is Force Offline Mode?<a href="#what-is-force-offline-mode" class="hash-link" aria-label="Direct link to What is Force Offline Mode?" title="Direct link to What is Force Offline Mode?" translate="no">​</a></h3>
+<p>Force Offline Mode lets you disconnect from your Jellyfin server and use Llamafin with only your downloaded content. This is useful when:</p>
+<ul>
+<li class="">Your server is temporarily unavailable</li>
+<li class="">You&#x27;re on a slow or unreliable network</li>
+<li class="">You want to save battery by avoiding network activity</li>
+<li class="">You&#x27;re traveling and want to use only downloaded music</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-enable-force-offline-mode">How to Enable Force Offline Mode<a href="#how-to-enable-force-offline-mode" class="hash-link" aria-label="Direct link to How to Enable Force Offline Mode" title="Direct link to How to Enable Force Offline Mode" translate="no">​</a></h3>
+<p><strong>From Settings</strong>:</p>
+<ol>
+<li class="">Go to Settings → Advanced</li>
+<li class="">Enable &quot;Force Offline Mode&quot;</li>
+<li class="">The app immediately disconnects from the server</li>
+<li class="">You can now browse and play only downloaded content</li>
+</ol>
+<p><strong>From Loading Screen</strong>:</p>
+<ul>
+<li class="">If you&#x27;re stuck on the loading screen due to a slow network</li>
+<li class="">Tap &quot;Skip and Continue Offline&quot;</li>
+<li class="">The app enters offline mode with your downloaded content</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-works-in-offline-mode">What Works in Offline Mode<a href="#what-works-in-offline-mode" class="hash-link" aria-label="Direct link to What Works in Offline Mode" title="Direct link to What Works in Offline Mode" translate="no">​</a></h3>
+<table><thead><tr><th>Feature</th><th>Available Offline?</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Play Downloaded Music</strong></td><td>✅ Yes</td><td>Full playback with all features</td></tr><tr><td><strong>Browse Offline Library</strong></td><td>✅ Yes</td><td>Albums, artists, songs, playlists, genres</td></tr><tr><td><strong>Search Downloaded Content</strong></td><td>✅ Yes</td><td>Search across all downloaded items</td></tr><tr><td><strong>DJ Mode</strong></td><td>✅ Yes</td><td>Works with downloaded tracks</td></tr><tr><td><strong>Sonic Analysis</strong></td><td>✅ Yes</td><td>Analysis data stored with downloads</td></tr><tr><td><strong>Playback History</strong></td><td>✅ Yes</td><td>Offline play count and last played date</td></tr><tr><td><strong>Stream from Server</strong></td><td>❌ No</td><td>Requires internet connection</td></tr><tr><td><strong>Browse Server Library</strong></td><td>❌ No</td><td>Requires server connection</td></tr><tr><td><strong>Server Search</strong></td><td>❌ No</td><td>Requires server connection</td></tr><tr><td><strong>Remote Control Control</strong></td><td>❌ No</td><td>Requires network communication</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="network-status-monitoring">Network Status Monitoring<a href="#network-status-monitoring" class="hash-link" aria-label="Direct link to Network Status Monitoring" title="Direct link to Network Status Monitoring" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dual-source-detection">Dual-Source Detection<a href="#dual-source-detection" class="hash-link" aria-label="Direct link to Dual-Source Detection" title="Direct link to Dual-Source Detection" translate="no">​</a></h3>
+<p>Llamafin monitors your network connection using two sources:</p>
+<ol>
+<li class=""><strong>Browser Events</strong>: Standard <code>online</code>/<code>offline</code> window events</li>
+<li class=""><strong>Capacitor Network Plugin</strong>: Native network status detection (on mobile devices)</li>
+</ol>
+<p><strong>Why Two Sources?</strong>:</p>
+<ul>
+<li class="">Browser events can be unreliable on some devices</li>
+<li class="">Native plugin provides more accurate status on mobile</li>
+<li class="">Both sources merge into a single unified status</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="unified-network-status">Unified Network Status<a href="#unified-network-status" class="hash-link" aria-label="Direct link to Unified Network Status" title="Direct link to Unified Network Status" translate="no">​</a></h3>
+<p>The app combines both sources into one clear status:</p>
+<table><thead><tr><th>Status</th><th>What It Means</th><th>What You See</th></tr></thead><tbody><tr><td><strong>Online</strong></td><td>Device connected, server reachable</td><td>&quot;Connected&quot;</td></tr><tr><td><strong>Connecting</strong></td><td>Device connected, server connecting</td><td>&quot;Connecting to Server...&quot;</td></tr><tr><td><strong>Offline</strong></td><td>Device disconnected OR server unreachable</td><td>&quot;Network Connection Lost&quot; or &quot;Server Unreachable&quot;</td></tr><tr><td><strong>Unknown</strong></td><td>App just started, status not yet determined</td><td>Brief moment during startup</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="automatic-recovery">Automatic Recovery<a href="#automatic-recovery" class="hash-link" aria-label="Direct link to Automatic Recovery" title="Direct link to Automatic Recovery" translate="no">​</a></h3>
+<p><strong>When Network Returns</strong>:</p>
+<ol>
+<li class="">Device goes from offline to online</li>
+<li class="">Llamafin detects the change automatically</li>
+<li class="">Triggers WebSocket reconnection</li>
+<li class="">If library is empty after reconnect, reloads it automatically</li>
+<li class="">You can continue streaming normally</li>
+</ol>
+<p><strong>No manual intervention needed</strong> — the app handles recovery automatically.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="offline-library">Offline Library<a href="#offline-library" class="hash-link" aria-label="Direct link to Offline Library" title="Direct link to Offline Library" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="browsing-your-downloaded-music">Browsing Your Downloaded Music<a href="#browsing-your-downloaded-music" class="hash-link" aria-label="Direct link to Browsing Your Downloaded Music" title="Direct link to Browsing Your Downloaded Music" translate="no">​</a></h3>
+<p>When offline, your library shows only downloaded content:</p>
+<p><strong>Available Views</strong>:</p>
+<ul>
+<li class=""><strong>Albums</strong>: All downloaded albums</li>
+<li class=""><strong>Artists</strong>: All artists with downloaded tracks</li>
+<li class=""><strong>Songs</strong>: All downloaded individual tracks</li>
+<li class=""><strong>Playlists</strong>: All downloaded playlists</li>
+<li class=""><strong>Genres</strong>: All genres with downloaded tracks</li>
+</ul>
+<p><strong>How It Works</strong>:</p>
+<ul>
+<li class="">Library pages automatically switch to offline mode when network is unavailable</li>
+<li class="">Empty states show &quot;No items offline&quot; instead of &quot;No items&quot;</li>
+<li class="">You can filter and sort offline content just like online content</li>
+<li class="">Clicking any offline item plays it locally</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="offline-home-screen">Offline Home Screen<a href="#offline-home-screen" class="hash-link" aria-label="Direct link to Offline Home Screen" title="Direct link to Offline Home Screen" translate="no">​</a></h3>
+<p>When offline, the home page shows:</p>
+<table><thead><tr><th>Section</th><th>Content</th></tr></thead><tbody><tr><td><strong>Latest Offline Music</strong></td><td>Recently downloaded containers sorted by date</td></tr><tr><td><strong>Recently Played Offline</strong></td><td>Tracks sorted by last played date</td></tr><tr><td><strong>Frequently Played Offline</strong></td><td>Tracks sorted by play count</td></tr></tbody></table>
+<p><strong>Purpose</strong>: Quick access to your most relevant offline content without browsing the full library.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="offline-search">Offline Search<a href="#offline-search" class="hash-link" aria-label="Direct link to Offline Search" title="Direct link to Offline Search" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-offline-search-works">How Offline Search Works<a href="#how-offline-search-works" class="hash-link" aria-label="Direct link to How Offline Search Works" title="Direct link to How Offline Search Works" translate="no">​</a></h3>
+<p><strong>Always Active</strong>:</p>
+<ul>
+<li class="">Offline search runs alongside online search automatically</li>
+<li class="">Works even when you&#x27;re online</li>
+<li class="">Results shown alongside online results</li>
+<li class="">No special configuration needed</li>
+</ul>
+<p><strong>What Gets Searched</strong>:</p>
+<ul>
+<li class="">Downloaded albums</li>
+<li class="">Downloaded artists</li>
+<li class="">Downloaded songs</li>
+<li class="">Downloaded playlists</li>
+<li class="">Downloaded genres</li>
+</ul>
+<p><strong>Result Types</strong>:</p>
+<ul>
+<li class="">Online results from server (when online)</li>
+<li class="">Offline results from downloaded content (always)</li>
+<li class="">Results merged and deduplicated</li>
+<li class="">Offline results always shown</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-suggestions-offline">Search Suggestions Offline<a href="#search-suggestions-offline" class="hash-link" aria-label="Direct link to Search Suggestions Offline" title="Direct link to Search Suggestions Offline" translate="no">​</a></h3>
+<p><strong>What Happens</strong>:</p>
+<ul>
+<li class="">Search suggestions require server connection</li>
+<li class="">When offline, suggestions are unavailable</li>
+<li class="">UI shows &quot;Search suggestions are not available while offline&quot;</li>
+<li class="">You can still search — just no pre-filled suggestions</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="caching-system">Caching System<a href="#caching-system" class="hash-link" aria-label="Direct link to Caching System" title="Direct link to Caching System" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="downloads-vs-caching">Downloads vs Caching<a href="#downloads-vs-caching" class="hash-link" aria-label="Direct link to Downloads vs Caching" title="Direct link to Downloads vs Caching" translate="no">​</a></h3>
+<p><strong>Downloads</strong> (User-Initiated):</p>
+<ul>
+<li class="">Permanent local copies you choose to save</li>
+<li class="">Appear in your Downloads section</li>
+<li class="">Available for offline playback indefinitely</li>
+<li class="">You manage them manually (add/remove)</li>
+</ul>
+<p><strong>Caching</strong> (Automatic):</p>
+<ul>
+<li class="">Background caching of tracks you&#x27;re about to play</li>
+<li class="">Temporary local copies for faster playback</li>
+<li class="">Managed automatically by the app</li>
+<li class="">Designed to reduce buffering and improve playback</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="caching-configuration">Caching Configuration<a href="#caching-configuration" class="hash-link" aria-label="Direct link to Caching Configuration" title="Direct link to Caching Configuration" translate="no">​</a></h3>
+<p><strong>Location</strong>: Settings → Advanced → Caching</p>
+<table><thead><tr><th>Setting</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><strong>Caching Enabled</strong></td><td>Enabled/Disabled</td><td>Master toggle for automatic caching</td></tr><tr><td><strong>WiFi Caching</strong></td><td>0, Next, 5, 10, 15, 20, 25, 40, Unlimited</td><td>How many tracks to cache ahead on WiFi</td></tr><tr><td><strong>Cellular Caching</strong></td><td>0, Next, 5, 10, 15, 20, 25, 40, Unlimited</td><td>How many tracks to cache ahead on cellular</td></tr><tr><td><strong>Cache Size Limit</strong></td><td>Configurable</td><td>Maximum cache size</td></tr><tr><td><strong>Network Speed Limit</strong></td><td>Configurable</td><td>Speed threshold for caching decisions</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="caching-options-explained">Caching Options Explained<a href="#caching-options-explained" class="hash-link" aria-label="Direct link to Caching Options Explained" title="Direct link to Caching Options Explained" translate="no">​</a></h3>
+<table><thead><tr><th>Option</th><th>Behaviour</th><th>Best For</th></tr></thead><tbody><tr><td><strong>0</strong></td><td>No caching</td><td>Save storage space</td></tr><tr><td><strong>Next</strong></td><td>Cache only the next track</td><td>Minimal buffering</td></tr><tr><td><strong>5-40</strong></td><td>Cache N tracks ahead</td><td>Balanced approach</td></tr><tr><td><strong>Unlimited</strong></td><td>Cache as many tracks as possible</td><td>Maximum offline availability</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-caching-works">How Caching Works<a href="#how-caching-works" class="hash-link" aria-label="Direct link to How Caching Works" title="Direct link to How Caching Works" translate="no">​</a></h3>
+<p><strong>The Process</strong>:</p>
+<ol>
+<li class="">You start playing music</li>
+<li class="">App checks caching settings and network status</li>
+<li class="">If caching enabled and conditions met, caches upcoming tracks</li>
+<li class="">Caches tracks in the background while you listen</li>
+<li class="">Checks every 30 seconds to maintain cache window</li>
+</ol>
+<p><strong>Guard Clauses</strong> (all must be true):</p>
+<ul>
+<li class="">Master caching enabled</li>
+<li class="">&quot;Prefer downloaded media&quot; not set to &#x27;never&#x27;</li>
+<li class="">If on cellular, &quot;downloads on cellular&quot; enabled</li>
+<li class="">Caching amount not &#x27;0&#x27; for current network type</li>
+<li class="">Tracks not already cached</li>
+<li class="">Network status is &#x27;online&#x27;</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="managing-cache">Managing Cache<a href="#managing-cache" class="hash-link" aria-label="Direct link to Managing Cache" title="Direct link to Managing Cache" translate="no">​</a></h3>
+<p><strong>Clear Cache</strong>:</p>
+<ul>
+<li class="">By Date: Remove items older than N days</li>
+<li class="">By Size: Remove items larger than N MB</li>
+<li class="">Access from Settings → Advanced → Caching → Clear Cache</li>
+</ul>
+<p><strong>Cache Healing</strong>:</p>
+<ul>
+<li class="">Scans for stale or corrupted cache entries</li>
+<li class="">Removes invalid entries</li>
+<li class="">Manual trigger from caching settings page</li>
+</ul>
+<p><strong>Manual Cache Fill</strong>:</p>
+<ul>
+<li class="">Forces cache to fill to target size</li>
+<li class="">Useful for pre-loading music before traveling</li>
+<li class="">Manual trigger from caching settings page</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="storage-layer">Storage Layer<a href="#storage-layer" class="hash-link" aria-label="Direct link to Storage Layer" title="Direct link to Storage Layer" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-gets-stored">What Gets Stored<a href="#what-gets-stored" class="hash-link" aria-label="Direct link to What Gets Stored" title="Direct link to What Gets Stored" translate="no">​</a></h3>
+<p><strong>Persistent Storage</strong> (survives app restarts):</p>
+<ul>
+<li class="">User settings and preferences</li>
+<li class="">Downloaded music files</li>
+<li class="">Analysis metadata (BPM, key, loudness)</li>
+<li class="">Playback history (offline play count, last played)</li>
+<li class="">Network speed history</li>
+</ul>
+<p><strong>Temporary Storage</strong> (cleared when app closes):</p>
+<ul>
+<li class="">In-memory playback state</li>
+<li class="">Active WebSocket connections</li>
+<li class="">Cached images (unless configured to persist)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="storage-capacity">Storage Capacity<a href="#storage-capacity" class="hash-link" aria-label="Direct link to Storage Capacity" title="Direct link to Storage Capacity" translate="no">​</a></h3>
+<p><strong>What Uses Storage</strong>:</p>
+<ul>
+<li class="">Downloaded music files (largest)</li>
+<li class="">Cache files (variable, depends on settings)</li>
+<li class="">Analysis metadata (~1-5 KB per track)</li>
+<li class="">Visualisation data (~100KB-1MB per track)</li>
+<li class="">Settings and preferences (negligible)</li>
+</ul>
+<p><strong>Managing Storage</strong>:</p>
+<ul>
+<li class="">View total usage in Downloads settings</li>
+<li class="">Clear cache by date or size</li>
+<li class="">Delete downloaded containers you no longer need</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="network-speed-testing">Network Speed Testing<a href="#network-speed-testing" class="hash-link" aria-label="Direct link to Network Speed Testing" title="Direct link to Network Speed Testing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="automatic-speed-measurement">Automatic Speed Measurement<a href="#automatic-speed-measurement" class="hash-link" aria-label="Direct link to Automatic Speed Measurement" title="Direct link to Automatic Speed Measurement" translate="no">​</a></h3>
+<p><strong>How It Works</strong>:</p>
+<ul>
+<li class="">Every image fetch from server measures transfer speed</li>
+<li class="">Speeds recorded in history with timestamp and context</li>
+<li class="">No manual testing required</li>
+<li class="">Helps app make smart caching decisions</li>
+</ul>
+<p><strong>What Gets Recorded</strong>:</p>
+<ul>
+<li class="">Speed in bits per second</li>
+<li class="">Timestamp of measurement</li>
+<li class="">Context (download-auto, stream-auto, manual-test)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="manual-speed-test">Manual Speed Test<a href="#manual-speed-test" class="hash-link" aria-label="Direct link to Manual Speed Test" title="Direct link to Manual Speed Test" translate="no">​</a></h3>
+<p><strong>How to Run</strong>:</p>
+<ol>
+<li class="">Go to Settings → Network (or Advanced)</li>
+<li class="">Tap &quot;Run Speed Test&quot;</li>
+<li class="">App fetches test image and measures speed</li>
+<li class="">Result shown in Mbps</li>
+<li class="">Added to speed history</li>
+</ol>
+<p><strong>Why It Matters</strong>:</p>
+<ul>
+<li class="">Helps app decide caching behaviour</li>
+<li class="">Informs you about network quality</li>
+<li class="">Can identify network issues</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="speed-history">Speed History<a href="#speed-history" class="hash-link" aria-label="Direct link to Speed History" title="Direct link to Speed History" translate="no">​</a></h3>
+<p><strong>What It Shows</strong>:</p>
+<ul>
+<li class="">Historical speed measurements</li>
+<li class="">Up to 10,000 entries</li>
+<li class="">Sorted by most recent first</li>
+<li class="">Includes context for each measurement</li>
+</ul>
+<p><strong>Automatic Management</strong>:</p>
+<ul>
+<li class="">History capped at 10,000 entries</li>
+<li class="">Oldest entries removed when cap reached</li>
+<li class="">Saved to storage for persistence</li>
+<li class="">Debounced saves (2-second delay) to prevent rapid writes</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-other-features">Integration with Other Features<a href="#integration-with-other-features" class="hash-link" aria-label="Direct link to Integration with Other Features" title="Direct link to Integration with Other Features" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="library-management">Library Management<a href="#library-management" class="hash-link" aria-label="Direct link to Library Management" title="Direct link to Library Management" translate="no">​</a></h3>
+<p><strong>Online vs Offline</strong>:</p>
+<ul>
+<li class="">Library pages check network status on load</li>
+<li class="">If online: shows server library</li>
+<li class="">If offline: shows downloaded library</li>
+<li class="">Empty messages change based on status</li>
+<li class="">No manual switching required</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="search--discovery">Search &amp; Discovery<a href="#search--discovery" class="hash-link" aria-label="Direct link to Search &amp; Discovery" title="Direct link to Search &amp; Discovery" translate="no">​</a></h3>
+<p><strong>Dual Search</strong>:</p>
+<ul>
+<li class="">Offline search always executes</li>
+<li class="">Online search only when connected</li>
+<li class="">Results shown side-by-side</li>
+<li class="">Deduplication prevents duplicates</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dj-mode">DJ Mode<a href="#dj-mode" class="hash-link" aria-label="Direct link to DJ Mode" title="Direct link to DJ Mode" translate="no">​</a></h3>
+<p><strong>Offline DJ</strong>:</p>
+<ul>
+<li class="">DJ Mode works with downloaded tracks</li>
+<li class="">All three modes functional offline (groupie, twofer, contempo)</li>
+<li class="">Track generation uses local analysis data</li>
+<li class="">No server calls required</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sonic-analysis">Sonic Analysis<a href="#sonic-analysis" class="hash-link" aria-label="Direct link to Sonic Analysis" title="Direct link to Sonic Analysis" translate="no">​</a></h3>
+<p><strong>Offline Analysis</strong>:</p>
+<ul>
+<li class="">Analysis data stored with downloaded tracks</li>
+<li class="">No network required to view analysis</li>
+<li class="">Visualisations available offline</li>
+<li class="">Sonic Twins works with downloaded items only</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="player--queue">Player &amp; Queue<a href="#player--queue" class="hash-link" aria-label="Direct link to Player &amp; Queue" title="Direct link to Player &amp; Queue" translate="no">​</a></h3>
+<p><strong>Offline Playback</strong>:</p>
+<ul>
+<li class="">Downloaded tracks play locally via Web Audio API</li>
+<li class="">All player features functional (EQ, visualizer, etc.)</li>
+<li class="">Queue management works identically</li>
+<li class="">DJ Mode generates tracks from local library</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="remote-device-control">Remote Device Control<a href="#remote-device-control" class="hash-link" aria-label="Direct link to Remote Device Control" title="Direct link to Remote Device Control" translate="no">​</a></h3>
+<p><strong>Offline Limitations</strong>:</p>
+<ul>
+<li class="">Remote control control requires network</li>
+<li class="">Cannot control remote devices while offline</li>
+<li class="">Local playback fully functional</li>
+<li class="">Reconnects automatically when network returns</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="error-handling--reliability">Error Handling &amp; Reliability<a href="#error-handling--reliability" class="hash-link" aria-label="Direct link to Error Handling &amp; Reliability" title="Direct link to Error Handling &amp; Reliability" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-happens-when-things-go-wrong">What Happens When Things Go Wrong<a href="#what-happens-when-things-go-wrong" class="hash-link" aria-label="Direct link to What Happens When Things Go Wrong" title="Direct link to What Happens When Things Go Wrong" translate="no">​</a></h3>
+<p><strong>Network Drops During Playback</strong>:</p>
+<ul>
+<li class="">Currently playing track continues (already loaded)</li>
+<li class="">Next track fails if not downloaded</li>
+<li class="">UI shows &quot;Network Connection Lost&quot;</li>
+<li class="">Downloaded tracks continue playing normally</li>
+</ul>
+<p><strong>Server Becomes Unreachable</strong>:</p>
+<ul>
+<li class="">WebSocket disconnect detected</li>
+<li class="">UI shows &quot;Server Unreachable&quot;</li>
+<li class="">Downloaded content remains available</li>
+<li class="">Auto-reconnects when server returns</li>
+</ul>
+<p><strong>Storage Full</strong>:</p>
+<ul>
+<li class="">Downloads fail with error message</li>
+<li class="">Caching pauses until space available</li>
+<li class="">Settings show current storage usage</li>
+<li class="">User notified of storage issues</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="self-healing-features">Self-Healing Features<a href="#self-healing-features" class="hash-link" aria-label="Direct link to Self-Healing Features" title="Direct link to Self-Healing Features" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Auto-Reconnect</strong>: Detects network return and reconnects automatically</li>
+<li class=""><strong>Library Recovery</strong>: Reloads library if empty after reconnect</li>
+<li class=""><strong>Force Offline Toggle</strong>: Immediately applies offline mode when setting changes</li>
+<li class=""><strong>Storage Queue</strong>: Operations queued before storage ready replay after initialisation</li>
+<li class=""><strong>Retry Interceptor</strong>: Retries failed HTTP requests up to 3 times (5xx errors and network failures only)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-specifications">Technical Specifications<a href="#technical-specifications" class="hash-link" aria-label="Direct link to Technical Specifications" title="Direct link to Technical Specifications" translate="no">​</a></h2>
+<table><thead><tr><th>Specification</th><th>Value</th></tr></thead><tbody><tr><td>Network Monitoring Sources</td><td>2 (Browser events + Capacitor plugin)</td></tr><tr><td>Unified Network Statuses</td><td>4 (unknown, offline, connecting, online)</td></tr><tr><td>Speed History Cap</td><td>10,000 entries</td></tr><tr><td>Speed Test Method</td><td>Image fetch with timing</td></tr><tr><td>Cache Check Interval</td><td>30 seconds (while playing)</td></tr><tr><td>Cache Save Debounce</td><td>2 seconds</td></tr><tr><td>HTTP Retry Attempts</td><td>Up to 3 (5xx and network failures only)</td></tr><tr><td>Storage Backend</td><td>IndexedDB (via @ionic/storage-angular)</td></tr><tr><td>Network History Persistence</td><td>@ionic/storage</td></tr><tr><td>Force Offline Mode</td><td>Configurable in Advanced Settings</td></tr><tr><td>Caching Options</td><td>0, Next, 5-40 tracks, Unlimited</td></tr><tr><td>Offline Library Views</td><td>5 (Albums, Artists, Songs, Playlists, Genres)</td></tr><tr><td>Offline Search Categories</td><td>5 (same as online)</td></tr><tr><td>Cache Clear Modes</td><td>2 (by Date, by Size)</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-cases">Use Cases<a href="#use-cases" class="hash-link" aria-label="Direct link to Use Cases" title="Direct link to Use Cases" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="airplane-travel">Airplane Travel<a href="#airplane-travel" class="hash-link" aria-label="Direct link to Airplane Travel" title="Direct link to Airplane Travel" translate="no">​</a></h3>
+<p><strong>Scenario</strong>: You&#x27;re on a flight with no internet</p>
+<p><strong>Setup</strong>:</p>
+<ol>
+<li class="">Download music before traveling</li>
+<li class="">Enable offline mode if needed</li>
+<li class="">Play downloaded music normally</li>
+<li class="">Browse offline library, search, use DJ Mode</li>
+</ol>
+<p><strong>Result</strong>:</p>
+<ul>
+<li class="">Full music playback experience</li>
+<li class="">No network required</li>
+<li class="">All features work normally</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="slow-network-recovery">Slow Network Recovery<a href="#slow-network-recovery" class="hash-link" aria-label="Direct link to Slow Network Recovery" title="Direct link to Slow Network Recovery" translate="no">​</a></h3>
+<p><strong>Scenario</strong>: Your network is slow and the app is stuck loading</p>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li class="">Tap &quot;Skip and Continue Offline&quot; on loading screen</li>
+<li class="">App enters offline mode immediately</li>
+<li class="">You can use downloaded content right away</li>
+<li class="">Reconnect manually when network improves</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="commute-with-cellular-data">Commute with Cellular Data<a href="#commute-with-cellular-data" class="hash-link" aria-label="Direct link to Commute with Cellular Data" title="Direct link to Commute with Cellular Data" translate="no">​</a></h3>
+<p><strong>Scenario</strong>: You&#x27;re commuting with limited cellular data</p>
+<p><strong>Setup</strong>:</p>
+<ol>
+<li class="">Set cellular caching to &#x27;Next&#x27; or low number</li>
+<li class="">Enable &quot;downloads on cellular&quot; if desired</li>
+<li class="">Download music on WiFi before commute</li>
+<li class="">Play downloaded music on cellular without using data</li>
+</ol>
+<p><strong>Result</strong>:</p>
+<ul>
+<li class="">Music plays from local files</li>
+<li class="">No cellular data used for streaming</li>
+<li class="">Minimal caching respects data limits</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="server-maintenance">Server Maintenance<a href="#server-maintenance" class="hash-link" aria-label="Direct link to Server Maintenance" title="Direct link to Server Maintenance" translate="no">​</a></h3>
+<p><strong>Scenario</strong>: Your Jellyfin server is down for maintenance</p>
+<p><strong>What Works</strong>:</p>
+<ul>
+<li class="">All downloaded content playable</li>
+<li class="">Offline library browsing</li>
+<li class="">Offline search</li>
+<li class="">DJ Mode with downloaded tracks</li>
+<li class="">Sonic analysis viewing</li>
+</ul>
+<p><strong>What Doesn&#x27;t</strong>:</p>
+<ul>
+<li class="">Streaming from server</li>
+<li class="">Browsing server library</li>
+<li class="">Server search</li>
+<li class="">Remote control control</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="app-shows-network-connection-lost">App Shows &quot;Network Connection Lost&quot;<a href="#app-shows-network-connection-lost" class="hash-link" aria-label="Direct link to App Shows &quot;Network Connection Lost&quot;" title="Direct link to App Shows &quot;Network Connection Lost&quot;" translate="no">​</a></h3>
+<p><strong>Check</strong>:</p>
+<ol>
+<li class="">Device has internet connection (try opening a webpage)</li>
+<li class="">WiFi or cellular enabled in device settings</li>
+<li class="">Airplane mode is off</li>
+<li class="">Force Offline Mode is not enabled (unless intentional)</li>
+</ol>
+<p><strong>Try</strong>:</p>
+<ul>
+<li class="">Toggle Airplane mode on/off</li>
+<li class="">Force reconnect from Settings → Advanced</li>
+<li class="">Restart the app</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="server-unreachable">Server Unreachable<a href="#server-unreachable" class="hash-link" aria-label="Direct link to Server Unreachable" title="Direct link to Server Unreachable" translate="no">​</a></h3>
+<p><strong>Check</strong>:</p>
+<ol>
+<li class="">Jellyfin server is running</li>
+<li class="">Server URL is correct in settings</li>
+<li class="">Network can reach server (ping test)</li>
+<li class="">Firewall not blocking server port</li>
+</ol>
+<p><strong>Try</strong>:</p>
+<ul>
+<li class="">Access server from browser to verify it&#x27;s running</li>
+<li class="">Check server URL in Llamafin settings</li>
+<li class="">Force reconnect from Settings</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="no-offline-content">No Offline Content<a href="#no-offline-content" class="hash-link" aria-label="Direct link to No Offline Content" title="Direct link to No Offline Content" translate="no">​</a></h3>
+<p><strong>Check</strong>:</p>
+<ol>
+<li class="">You have downloaded music (go to Downloads page)</li>
+<li class="">Downloads completed successfully</li>
+<li class="">Storage not full</li>
+<li class="">App has finished loading</li>
+</ol>
+<p><strong>Try</strong>:</p>
+<ul>
+<li class="">Download some music first</li>
+<li class="">Wait for downloads to complete</li>
+<li class="">Check storage space in settings</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="caching-not-working">Caching Not Working<a href="#caching-not-working" class="hash-link" aria-label="Direct link to Caching Not Working" title="Direct link to Caching Not Working" translate="no">​</a></h3>
+<p><strong>Check</strong>:</p>
+<ol>
+<li class="">Master caching enabled in settings</li>
+<li class="">&quot;Prefer downloaded media&quot; not set to &#x27;never&#x27;</li>
+<li class="">If on cellular, &quot;downloads on cellular&quot; enabled</li>
+<li class="">Caching amount not &#x27;0&#x27; for current network type</li>
+<li class="">Network status is &#x27;online&#x27;</li>
+</ol>
+<p><strong>Try</strong>:</p>
+<ul>
+<li class="">Enable caching in settings</li>
+<li class="">Increase caching amount (Next → 5 → 10)</li>
+<li class="">Check network connectivity</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="related-documentation">Related Documentation<a href="#related-documentation" class="hash-link" aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation" translate="no">​</a></h2>
+<ul>
+<li class=""><a class="" href="/docs/downloads/USER-downloads">Downloads System</a> - Offline music management</li>
+<li class=""><a class="" href="/docs/settings/USER-settings">Settings System</a> - Force Offline Mode, caching configuration</li>
+<li class=""><a class="" href="/docs/search/USER-search">Search &amp; Discovery</a> - Offline search functionality</li>
+<li class=""><a class="" href="/docs/library/USER-library">Library Management</a> - Offline library browsing</li>
+<li class=""><a class="" href="/docs/network/USER-network">Network Management</a> - Network status and speed testing</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/downloads/USER-downloads"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Offline Downloads &amp; Storage Management</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/connect-p2p/USER-connect-p2p"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Remote Device Control (Connect P2P &amp; Jellyfin Sessions)</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#key-concepts" class="table-of-contents__link toc-highlight">Key Concepts</a><ul><li><a href="#three-pillars-of-offline-support" class="table-of-contents__link toc-highlight">Three Pillars of Offline Support</a></li></ul></li><li><a href="#force-offline-mode" class="table-of-contents__link toc-highlight">Force Offline Mode</a><ul><li><a href="#what-is-force-offline-mode" class="table-of-contents__link toc-highlight">What is Force Offline Mode?</a></li><li><a href="#how-to-enable-force-offline-mode" class="table-of-contents__link toc-highlight">How to Enable Force Offline Mode</a></li><li><a href="#what-works-in-offline-mode" class="table-of-contents__link toc-highlight">What Works in Offline Mode</a></li></ul></li><li><a href="#network-status-monitoring" class="table-of-contents__link toc-highlight">Network Status Monitoring</a><ul><li><a href="#dual-source-detection" class="table-of-contents__link toc-highlight">Dual-Source Detection</a></li><li><a href="#unified-network-status" class="table-of-contents__link toc-highlight">Unified Network Status</a></li><li><a href="#automatic-recovery" class="table-of-contents__link toc-highlight">Automatic Recovery</a></li></ul></li><li><a href="#offline-library" class="table-of-contents__link toc-highlight">Offline Library</a><ul><li><a href="#browsing-your-downloaded-music" class="table-of-contents__link toc-highlight">Browsing Your Downloaded Music</a></li><li><a href="#offline-home-screen" class="table-of-contents__link toc-highlight">Offline Home Screen</a></li></ul></li><li><a href="#offline-search" class="table-of-contents__link toc-highlight">Offline Search</a><ul><li><a href="#how-offline-search-works" class="table-of-contents__link toc-highlight">How Offline Search Works</a></li><li><a href="#search-suggestions-offline" class="table-of-contents__link toc-highlight">Search Suggestions Offline</a></li></ul></li><li><a href="#caching-system" class="table-of-contents__link toc-highlight">Caching System</a><ul><li><a href="#downloads-vs-caching" class="table-of-contents__link toc-highlight">Downloads vs Caching</a></li><li><a href="#caching-configuration" class="table-of-contents__link toc-highlight">Caching Configuration</a></li><li><a href="#caching-options-explained" class="table-of-contents__link toc-highlight">Caching Options Explained</a></li><li><a href="#how-caching-works" class="table-of-contents__link toc-highlight">How Caching Works</a></li><li><a href="#managing-cache" class="table-of-contents__link toc-highlight">Managing Cache</a></li></ul></li><li><a href="#storage-layer" class="table-of-contents__link toc-highlight">Storage Layer</a><ul><li><a href="#what-gets-stored" class="table-of-contents__link toc-highlight">What Gets Stored</a></li><li><a href="#storage-capacity" class="table-of-contents__link toc-highlight">Storage Capacity</a></li></ul></li><li><a href="#network-speed-testing" class="table-of-contents__link toc-highlight">Network Speed Testing</a><ul><li><a href="#automatic-speed-measurement" class="table-of-contents__link toc-highlight">Automatic Speed Measurement</a></li><li><a href="#manual-speed-test" class="table-of-contents__link toc-highlight">Manual Speed Test</a></li><li><a href="#speed-history" class="table-of-contents__link toc-highlight">Speed History</a></li></ul></li><li><a href="#integration-with-other-features" class="table-of-contents__link toc-highlight">Integration with Other Features</a><ul><li><a href="#library-management" class="table-of-contents__link toc-highlight">Library Management</a></li><li><a href="#search--discovery" class="table-of-contents__link toc-highlight">Search &amp; Discovery</a></li><li><a href="#dj-mode" class="table-of-contents__link toc-highlight">DJ Mode</a></li><li><a href="#sonic-analysis" class="table-of-contents__link toc-highlight">Sonic Analysis</a></li><li><a href="#player--queue" class="table-of-contents__link toc-highlight">Player &amp; Queue</a></li><li><a href="#remote-device-control" class="table-of-contents__link toc-highlight">Remote Device Control</a></li></ul></li><li><a href="#error-handling--reliability" class="table-of-contents__link toc-highlight">Error Handling &amp; Reliability</a><ul><li><a href="#what-happens-when-things-go-wrong" class="table-of-contents__link toc-highlight">What Happens When Things Go Wrong</a></li><li><a href="#self-healing-features" class="table-of-contents__link toc-highlight">Self-Healing Features</a></li></ul></li><li><a href="#technical-specifications" class="table-of-contents__link toc-highlight">Technical Specifications</a></li><li><a href="#use-cases" class="table-of-contents__link toc-highlight">Use Cases</a><ul><li><a href="#airplane-travel" class="table-of-contents__link toc-highlight">Airplane Travel</a></li><li><a href="#slow-network-recovery" class="table-of-contents__link toc-highlight">Slow Network Recovery</a></li><li><a href="#commute-with-cellular-data" class="table-of-contents__link toc-highlight">Commute with Cellular Data</a></li><li><a href="#server-maintenance" class="table-of-contents__link toc-highlight">Server Maintenance</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#app-shows-network-connection-lost" class="table-of-contents__link toc-highlight">App Shows &quot;Network Connection Lost&quot;</a></li><li><a href="#server-unreachable" class="table-of-contents__link toc-highlight">Server Unreachable</a></li><li><a href="#no-offline-content" class="table-of-contents__link toc-highlight">No Offline Content</a></li><li><a href="#caching-not-working" class="table-of-contents__link toc-highlight">Caching Not Working</a></li></ul></li><li><a href="#related-documentation" class="table-of-contents__link toc-highlight">Related Documentation</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Product</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/home#features">Features</a></li><li class="footer__item"><a class="footer__link-item" href="/home#compare">Compare</a></li><li class="footer__item"><a class="footer__link-item" href="/download">Download</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/audio-engine/USER-audio-engine">Audio Engine</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/downloads/USER-downloads">Offline &amp; Downloads</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/dj-mode/USER-dj-mode">DJ Mode</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Legal</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/privacy-policy">Privacy Policy</a></li><li class="footer__item"><a class="footer__link-item" href="/terms-of-service">Terms of Service</a></li><li class="footer__item"><a class="footer__link-item" href="/eula">EULA</a></li><li class="footer__item"><a class="footer__link-item" href="/security">Security</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Llamafin. All rights reserved. Llamafin is not affiliated with Jellyfin, Plex, Spotify, Apple, or Google.</div></div></div></footer></div>
+</body>
+</html>
